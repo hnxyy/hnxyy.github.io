@@ -8,16 +8,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Use Python Download Xiao Shuo | Hnxyy&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言使用python 下载 啃书小说网 http://www.kenshu.cc/ 指定目录小说的所有文章到一个txt文件。 使用方法： 输入小说网目录页地址，如： 师娘，别玩火（作者：推窗望岳）的目录首页为： http://www.kenshu.cc/xiaoshuo/31109/0/ 附python源码">
+  <meta name="description" content="前言使用python 下载 啃书小说网 指定小说的所有文章到一个txt文件。 使用方法： 输入小说网目录页地址，如： 师娘，别玩火（作者：推窗望岳）的目录首页为： http://www.kenshu.cc/xiaoshuo/31109/0/ 附python源码">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Use Python Download Xiao Shuo">
 <meta property="og:url" content="http://yoursite.com/2017/11/14/download-xiaoshuo/index.html">
 <meta property="og:site_name" content="Hnxyy&#39;s Blog">
-<meta property="og:description" content="前言使用python 下载 啃书小说网 http://www.kenshu.cc/ 指定目录小说的所有文章到一个txt文件。 使用方法： 输入小说网目录页地址，如： 师娘，别玩火（作者：推窗望岳）的目录首页为： http://www.kenshu.cc/xiaoshuo/31109/0/ 附python源码">
-<meta property="og:updated_time" content="2017-11-14T04:20:45.665Z">
+<meta property="og:description" content="前言使用python 下载 啃书小说网 指定小说的所有文章到一个txt文件。 使用方法： 输入小说网目录页地址，如： 师娘，别玩火（作者：推窗望岳）的目录首页为： http://www.kenshu.cc/xiaoshuo/31109/0/ 附python源码">
+<meta property="og:updated_time" content="2017-11-14T04:35:55.779Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Use Python Download Xiao Shuo">
-<meta name="twitter:description" content="前言使用python 下载 啃书小说网 http://www.kenshu.cc/ 指定目录小说的所有文章到一个txt文件。 使用方法： 输入小说网目录页地址，如： 师娘，别玩火（作者：推窗望岳）的目录首页为： http://www.kenshu.cc/xiaoshuo/31109/0/ 附python源码">
+<meta name="twitter:description" content="前言使用python 下载 啃书小说网 指定小说的所有文章到一个txt文件。 使用方法： 输入小说网目录页地址，如： 师娘，别玩火（作者：推窗望岳）的目录首页为： http://www.kenshu.cc/xiaoshuo/31109/0/ 附python源码">
   
     <link rel="alternative" href="/atom.xml" title="Hnxyy&#39;s Blog" type="application/atom+xml">
   
@@ -173,147 +173,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用python 下载 啃书小说网 <a href="http://www.kenshu.cc/" target="_blank" rel="external">http://www.kenshu.cc/</a> 指定目录小说的所有文章到一个txt文件。</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用python 下载 <a href="http://www.kenshu.cc/" target="_blank" rel="external">啃书小说网</a> 指定小说的所有文章到一个txt文件。</p>
 <p>使用方法：</p>
 <p>输入小说网目录页地址，如：</p>
 <p>师娘，别玩火（作者：推窗望岳）的目录首页为：</p>
 <p><a href="http://www.kenshu.cc/xiaoshuo/31109/0/" target="_blank" rel="external">http://www.kenshu.cc/xiaoshuo/31109/0/</a></p>
 <p>附python源码</p>
 <a id="more"></a>
-<h1 id="coding-utf-8"><a href="#coding-utf-8" class="headerlink" title="coding=utf-8"></a>coding=utf-8</h1><p>import time<br>import requests<br>from pyquery import PyQuery as pq<br>import re</p>
-<p>headers = {‘User-Agent’:’Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36’}</p>
-<p>#filename = ‘92802.txt’</p>
-<p>def getBetween(str, str1, str2):<br>  strOutput = str[str.find(str1)+len(str1):str.find(str2)]<br>  return strOutput</p>
-<p>def isNone(v):<br>    if not v:<br>        return ‘’<br>    else:<br>        return v</p>
-<p>def c(txt):<br>    txt = isNone(txt)<br>    if txt == ‘’:<br>        return ‘’</p>
-<pre><code>s = &quot;&quot;&quot;
-    &lt;span style=&apos;color:#4876FF&apos;&gt;--啃---书--网-小--说---这是华丽的分割线--&lt;/span&gt;&lt;br /&gt;
-    &lt;a href=&apos;/xiaoshuo/31109/&apos;&gt;师娘，别玩火啃书网&lt;/a&gt;
-    小说网友请提示:长时间阅读请注意眼睛的休息。啃书网推荐阅读：
-    &lt;a href=&apos;/xiaoshuo/42289/&apos;&gt;三国之将星系统&lt;/a&gt;
-    &lt;script type=&quot;text/rocketscript&quot;&gt;readad1();&lt;/script&gt;&lt;br /&gt;
-    &lt;span style=&apos;color:#4876FF&apos;&gt;-啃--书-小--说--网---这是华丽的分割线---&lt;/span&gt;
-
-    &quot;&quot;&quot;
-
-#替换href
-urls = re.findall(r&quot;&lt;a.*?href=.*?&lt;\/a&gt;&quot;, txt, re.I|re.S|re.M)  
-for url in urls:  
-    #print url
-    txt = txt.replace(url, &apos;&apos;)
-
-#替换span
-spans = re.findall(r&quot;&lt;span.*?style=.*?&lt;\/span&gt;&quot;, txt, re.I|re.S|re.M)  
-for span in spans:  
-    #print span
-    txt = txt.replace(span, &apos;&apos;)
-
-#替换script
-scripts = re.findall(r&quot;&lt;script.*?type=.*?&lt;\/script&gt;&quot;, txt, re.I|re.S|re.M)  
-for script in scripts:  
-    #print script
-    txt = txt.replace(script, &apos;&apos;)
-
-txt = txt.replace(&apos;&amp;nbsp;&apos;,&apos; &apos;)
-txt = txt.replace(&apos;&lt;br /&gt;&apos;, &apos;\n&apos;)
-txt = txt.replace(&apos;\n\n&apos;, &apos;\n&apos;)
-
-tip = u&quot;小说网友请提示:长时间阅读请注意眼睛的休息。啃书网推荐阅读：&quot;
-txt = txt.replace(tip,&apos;&apos;)
-
-return txt
-</code></pre><p>def deal(filename):<br>    fr = open(filename, ‘r’)<br>    l = fr.readlines()<br>    fr.close()</p>
-<pre><code>txt = &quot;&quot;
-for t in l:
-    txt += t
-
-print &apos;1111111111111111111111111111111111111111111111111111111\n&apos;
-txt = c(txt)
-print txt
-print &apos;2222222222222222222222222222222222222222222222222222222\n&apos;
-
-fw = open(filename, &apos;w&apos;)
-fw.write(txt)
-fw.close()
-</code></pre><p>def getUrl(url):<br>    global filename</p>
-<pre><code>urls = []
-try:
-    r=requests.get(url,headers=headers)
-    d = pq(r.content)
-    #d = pq(url=url,encoding=&quot;utf8&quot;)
-    #print d
-    title = d(&apos;meta[property=&quot;og:title&quot;]&apos;).attr(&apos;content&apos;)
-    title = isNone(title)
-    print title
-
-    if title==&apos;&apos;:
-        print u&apos;读取目录出错...&apos;
-        return False
-
-    title = title.encode(&quot;gbk&quot;, &quot;ignore&quot;)
-    filename = title + &apos;.txt&apos;
-    f = open(filename, &quot;a&quot;)
-    f.write(title+&apos;\n\n&apos;);
-    f.close
-
-    ul = d(&apos;ul[class=&quot;clearfix chapter-list&quot;]&apos;)
-    #print ul
-    spans = ul(&apos;span&apos;)
-    for span in spans.items():
-        href = span(&apos;a&apos;).attr(&apos;href&apos;)
-        text = span(&apos;a&apos;).html()
-
-        href = &quot;http://www.kenshu.cc&quot; + href
-        print href,text
-
-        urls.append(href)
-
-        text = text.encode(&quot;gbk&quot;, &quot;ignore&quot;)
-        f = open(filename, &quot;a&quot;)
-        f.write(text+&apos;  &apos;+href+&apos;\n\n&apos;);
-        f.close
-
-    print u&apos;读取目录完成...&apos;
-    return urls
-
-except Exception,e:
-    print str(e)
-    print u&apos;读取目录出错...&apos;
-    return False
-</code></pre><p>def getText(url):<br>    try:<br>        print url<br>        r=requests.get(url,headers=headers)<br>        d = pq(r.content)</p>
-<pre><code>    #d = pq(url=url,encoding=&quot;utf8&quot;)
-    #print d
-    title = d(&apos;h1[class=&quot;article-title&quot;]&apos;).html()
-    print title
-    title = isNone(title)
-    if title == &apos;&apos;:
-        print u&apos;读取文章出错，重试中...&apos;
-        return False
-
-    txt = d(&apos;div[class=&quot;article-con&quot;]&apos;).html()
-    #print txt
-    txt = c(txt)
-    #print txt
-
-    title = title.encode(&quot;gbk&quot;, &quot;ignore&quot;)
-    txt = txt.encode(&quot;gbk&quot;, &quot;ignore&quot;)
-    f = open(filename, &quot;a&quot;)
-    f.write(title+&apos;\n\n&apos;)
-    f.write(txt+&apos;\n\n&apos;)
-    f.close
-
-    print u&apos;写入文章成功...&apos;
-    time.sleep(5)
-    return True
-
-except Exception,e:
-    print str(e)
-    print u&apos;读取文章出错，重试中...&apos;
-    return False
-</code></pre><p>#deal(‘test.txt’)<br>url = raw_input(‘plz input url:’)<br>if url == ‘’:<br>    url = “<a href="http://www.kenshu.cc/xiaoshuo/31109/0/" target="_blank" rel="external">http://www.kenshu.cc/xiaoshuo/31109/0/</a>“</p>
-<p>urls = getUrl(url)</p>
-<p>#urls = False<br>if urls:<br>    for url in urls:<br>        ok = False<br>        while not ok:<br>            ok = getText(url)</p>
-
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># coding=utf-8</span></div><div class="line"></div><div class="line">import time</div><div class="line">import requests</div><div class="line">from pyquery import PyQuery as pq</div><div class="line">import re</div><div class="line"></div><div class="line"></div><div class="line">headers = &#123;<span class="string">'User-Agent'</span>:<span class="string">'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'</span>&#125;</div><div class="line"></div><div class="line"><span class="comment">#filename = '92802.txt'</span></div><div class="line"></div><div class="line">def getBetween(str, str1, str2):</div><div class="line">  strOutput = str[str.find(str1)+len(str1):str.find(str2)]</div><div class="line">  <span class="built_in">return</span> strOutput</div><div class="line"></div><div class="line"></div><div class="line">def isNone(v):</div><div class="line">    <span class="keyword">if</span> not v:</div><div class="line">        <span class="built_in">return</span> <span class="string">''</span></div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="built_in">return</span> v</div><div class="line"></div><div class="line"></div><div class="line">def c(txt):</div><div class="line">    txt = isNone(txt)</div><div class="line">    <span class="keyword">if</span> txt == <span class="string">''</span>:</div><div class="line">        <span class="built_in">return</span> <span class="string">''</span></div><div class="line"></div><div class="line">    s = <span class="string">""</span><span class="string">"</span></div><div class="line"><span class="string">        &lt;span style='color:#4876FF'&gt;--啃---书--网-小--说---这是华丽的分割线--&lt;/span&gt;&lt;br /&gt;</span></div><div class="line"><span class="string">        &lt;a href='/xiaoshuo/31109/'&gt;师娘，别玩火啃书网&lt;/a&gt;</span></div><div class="line"><span class="string">        小说网友请提示:长时间阅读请注意眼睛的休息。啃书网推荐阅读：</span></div><div class="line"><span class="string">        &lt;a href='/xiaoshuo/42289/'&gt;三国之将星系统&lt;/a&gt;</span></div><div class="line"><span class="string">        &lt;script type="</span>text/rocketscript<span class="string">"&gt;readad1();&lt;/script&gt;&lt;br /&gt;</span></div><div class="line"><span class="string">        &lt;span style='color:#4876FF'&gt;-啃--书-小--说--网---这是华丽的分割线---&lt;/span&gt;</span></div><div class="line"><span class="string">        </span></div><div class="line"><span class="string">        "</span><span class="string">""</span></div><div class="line"></div><div class="line">    <span class="comment">#替换href</span></div><div class="line">    urls = re.findall(r<span class="string">"&lt;a.*?href=.*?&lt;\/a&gt;"</span>, txt, re.I|re.S|re.M)  </div><div class="line">    <span class="keyword">for</span> url <span class="keyword">in</span> urls:  </div><div class="line">        <span class="comment">#print url</span></div><div class="line">        txt = txt.replace(url, <span class="string">''</span>)</div><div class="line"></div><div class="line">    <span class="comment">#替换span</span></div><div class="line">    spans = re.findall(r<span class="string">"&lt;span.*?style=.*?&lt;\/span&gt;"</span>, txt, re.I|re.S|re.M)  </div><div class="line">    <span class="keyword">for</span> span <span class="keyword">in</span> spans:  </div><div class="line">        <span class="comment">#print span</span></div><div class="line">        txt = txt.replace(span, <span class="string">''</span>)</div><div class="line"></div><div class="line">    <span class="comment">#替换script</span></div><div class="line">    scripts = re.findall(r<span class="string">"&lt;script.*?type=.*?&lt;\/script&gt;"</span>, txt, re.I|re.S|re.M)  </div><div class="line">    <span class="keyword">for</span> script <span class="keyword">in</span> scripts:  </div><div class="line">        <span class="comment">#print script</span></div><div class="line">        txt = txt.replace(script, <span class="string">''</span>)</div><div class="line"></div><div class="line">    txt = txt.replace(<span class="string">'&amp;nbsp;'</span>,<span class="string">' '</span>)</div><div class="line">    txt = txt.replace(<span class="string">'&lt;br /&gt;'</span>, <span class="string">'\n'</span>)</div><div class="line">    txt = txt.replace(<span class="string">'\n\n'</span>, <span class="string">'\n'</span>)</div><div class="line"></div><div class="line">    tip = u<span class="string">"小说网友请提示:长时间阅读请注意眼睛的休息。啃书网推荐阅读："</span></div><div class="line">    txt = txt.replace(tip,<span class="string">''</span>)</div><div class="line"></div><div class="line">    <span class="built_in">return</span> txt</div><div class="line">        </div><div class="line"></div><div class="line">def deal(filename):</div><div class="line">    fr = open(filename, <span class="string">'r'</span>)</div><div class="line">    l = fr.readlines()</div><div class="line">    fr.close()</div><div class="line">    </div><div class="line">    txt = <span class="string">""</span></div><div class="line">    <span class="keyword">for</span> t <span class="keyword">in</span> l:</div><div class="line">        txt += t</div><div class="line">    </div><div class="line">    <span class="built_in">print</span> <span class="string">'1111111111111111111111111111111111111111111111111111111\n'</span></div><div class="line">    txt = c(txt)</div><div class="line">    <span class="built_in">print</span> txt</div><div class="line">    <span class="built_in">print</span> <span class="string">'2222222222222222222222222222222222222222222222222222222\n'</span></div><div class="line"></div><div class="line">    fw = open(filename, <span class="string">'w'</span>)</div><div class="line">    fw.write(txt)</div><div class="line">    fw.close()</div><div class="line"></div><div class="line"></div><div class="line">def getUrl(url):</div><div class="line">    global filename</div><div class="line"></div><div class="line">    urls = []</div><div class="line">    try:</div><div class="line">        r=requests.get(url,headers=headers)</div><div class="line">        d = pq(r.content)</div><div class="line">        <span class="comment">#d = pq(url=url,encoding="utf8")</span></div><div class="line">        <span class="comment">#print d</span></div><div class="line">        title = d(<span class="string">'meta[property="og:title"]'</span>).attr(<span class="string">'content'</span>)</div><div class="line">        title = isNone(title)</div><div class="line">        <span class="built_in">print</span> title</div><div class="line"></div><div class="line">        <span class="keyword">if</span> title==<span class="string">''</span>:</div><div class="line">            <span class="built_in">print</span> u<span class="string">'读取目录出错...'</span></div><div class="line">            <span class="built_in">return</span> False</div><div class="line">        </div><div class="line">        title = title.encode(<span class="string">"gbk"</span>, <span class="string">"ignore"</span>)</div><div class="line">        filename = title + <span class="string">'.txt'</span></div><div class="line">        f = open(filename, <span class="string">"a"</span>)</div><div class="line">        f.write(title+<span class="string">'\n\n'</span>);</div><div class="line">        f.close</div><div class="line">    </div><div class="line">        ul = d(<span class="string">'ul[class="clearfix chapter-list"]'</span>)</div><div class="line">        <span class="comment">#print ul</span></div><div class="line">        spans = ul(<span class="string">'span'</span>)</div><div class="line">        <span class="keyword">for</span> span <span class="keyword">in</span> spans.items():</div><div class="line">            href = span(<span class="string">'a'</span>).attr(<span class="string">'href'</span>)</div><div class="line">            text = span(<span class="string">'a'</span>).html()</div><div class="line"></div><div class="line">            href = <span class="string">"http://www.kenshu.cc"</span> + href</div><div class="line">            <span class="built_in">print</span> href,text</div><div class="line"></div><div class="line">            urls.append(href)</div><div class="line"></div><div class="line">            text = text.encode(<span class="string">"gbk"</span>, <span class="string">"ignore"</span>)</div><div class="line">            f = open(filename, <span class="string">"a"</span>)</div><div class="line">            f.write(text+<span class="string">'  '</span>+href+<span class="string">'\n\n'</span>);</div><div class="line">            f.close</div><div class="line"></div><div class="line">        <span class="built_in">print</span> u<span class="string">'读取目录完成...'</span></div><div class="line">        <span class="built_in">return</span> urls</div><div class="line"></div><div class="line">    except Exception,e:</div><div class="line">        <span class="built_in">print</span> str(e)</div><div class="line">        <span class="built_in">print</span> u<span class="string">'读取目录出错...'</span></div><div class="line">        <span class="built_in">return</span> False</div><div class="line"></div><div class="line"></div><div class="line">def getText(url):</div><div class="line">    try:</div><div class="line">        <span class="built_in">print</span> url</div><div class="line">        r=requests.get(url,headers=headers)</div><div class="line">        d = pq(r.content)</div><div class="line">        <span class="comment">#d = pq(url=url,encoding="utf8")</span></div><div class="line">        <span class="comment">#print d</span></div><div class="line">        title = d(<span class="string">'h1[class="article-title"]'</span>).html()</div><div class="line">        <span class="built_in">print</span> title</div><div class="line">        title = isNone(title)</div><div class="line">        <span class="keyword">if</span> title == <span class="string">''</span>:</div><div class="line">            <span class="built_in">print</span> u<span class="string">'读取文章出错，重试中...'</span></div><div class="line">            <span class="built_in">return</span> False</div><div class="line">          </div><div class="line">        txt = d(<span class="string">'div[class="article-con"]'</span>).html()</div><div class="line">        <span class="comment">#print txt</span></div><div class="line">        txt = c(txt)</div><div class="line">        <span class="comment">#print txt</span></div><div class="line"></div><div class="line">        title = title.encode(<span class="string">"gbk"</span>, <span class="string">"ignore"</span>)</div><div class="line">        txt = txt.encode(<span class="string">"gbk"</span>, <span class="string">"ignore"</span>)</div><div class="line">        f = open(filename, <span class="string">"a"</span>)</div><div class="line">        f.write(title+<span class="string">'\n\n'</span>)</div><div class="line">        f.write(txt+<span class="string">'\n\n'</span>)</div><div class="line">        f.close</div><div class="line">        </div><div class="line">        <span class="built_in">print</span> u<span class="string">'写入文章成功...'</span></div><div class="line">        time.sleep(5)</div><div class="line">        <span class="built_in">return</span> True</div><div class="line">        </div><div class="line">    except Exception,e:</div><div class="line">        <span class="built_in">print</span> str(e)</div><div class="line">        <span class="built_in">print</span> u<span class="string">'读取文章出错，重试中...'</span></div><div class="line">        <span class="built_in">return</span> False</div><div class="line">        </div><div class="line"></div><div class="line"><span class="comment">#deal('test.txt')</span></div><div class="line">url = raw_input(<span class="string">'plz input url:'</span>)</div><div class="line"><span class="keyword">if</span> url == <span class="string">''</span>:</div><div class="line">    url = <span class="string">"http://www.kenshu.cc/xiaoshuo/31109/0/"</span></div><div class="line">    </div><div class="line">urls = getUrl(url)</div><div class="line"><span class="comment">#urls = False</span></div><div class="line"><span class="keyword">if</span> urls:</div><div class="line">    <span class="keyword">for</span> url <span class="keyword">in</span> urls:</div><div class="line">        ok = False</div><div class="line">        <span class="keyword">while</span> not ok:</div><div class="line">            ok = getText(url)</div></pre></td></tr></table></figure>
       
 
       
