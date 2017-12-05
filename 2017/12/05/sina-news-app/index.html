@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hnxyy&#39;s Blog</title>
+  <title>Use Python Spilder Sina Finance App News | Hnxyy&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hnxyy&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="前言使用python 下载Sina财经app财经、股票频道的新闻列表，并保存到mssql数据中。 附python源码">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use Python Spilder Sina Finance App News">
+<meta property="og:url" content="http://yoursite.com/2017/12/05/sina-news-app/index.html">
 <meta property="og:site_name" content="Hnxyy&#39;s Blog">
+<meta property="og:description" content="前言使用python 下载Sina财经app财经、股票频道的新闻列表，并保存到mssql数据中。 附python源码">
+<meta property="og:updated_time" content="2017-12-05T08:57:05.764Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hnxyy&#39;s Blog">
+<meta name="twitter:title" content="Use Python Spilder Sina Finance App News">
+<meta name="twitter:description" content="前言使用python 下载Sina财经app财经、股票频道的新闻列表，并保存到mssql数据中。 附python源码">
   
     <link rel="alternative" href="/atom.xml" title="Hnxyy&#39;s Blog" type="application/atom+xml">
   
@@ -149,16 +153,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-sina-news-app" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-sina-news-app" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/05/sina-news-app/">Use Python Spilder Sina Finance App News</a>
+    <h1 class="article-title" itemprop="name">
+      Use Python Spilder Sina Finance App News
     </h1>
   
 
@@ -173,11 +175,31 @@
       
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用python 下载Sina财经app财经、股票频道的新闻列表，并保存到mssql数据中。</p>
 <p>附python源码</p>
-        
-          <a class="article-more-a" href="/2017/12/05/sina-news-app/#more">more >></a>
-        
+<a id="more"></a>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div><div class="line">217</div><div class="line">218</div><div class="line">219</div><div class="line">220</div><div class="line">221</div><div class="line">222</div><div class="line">223</div><div class="line">224</div><div class="line">225</div><div class="line">226</div><div class="line">227</div><div class="line">228</div><div class="line">229</div><div class="line">230</div><div class="line">231</div><div class="line">232</div><div class="line">233</div><div class="line">234</div><div class="line">235</div><div class="line">236</div><div class="line">237</div><div class="line">238</div><div class="line">239</div><div class="line">240</div><div class="line">241</div><div class="line">242</div><div class="line">243</div><div class="line">244</div><div class="line">245</div><div class="line">246</div><div class="line">247</div><div class="line">248</div><div class="line">249</div><div class="line">250</div><div class="line">251</div><div class="line">252</div><div class="line">253</div><div class="line">254</div><div class="line">255</div><div class="line">256</div><div class="line">257</div><div class="line">258</div><div class="line">259</div><div class="line">260</div><div class="line">261</div><div class="line">262</div><div class="line">263</div><div class="line">264</div><div class="line">265</div><div class="line">266</div><div class="line">267</div><div class="line">268</div><div class="line">269</div><div class="line">270</div><div class="line">271</div><div class="line">272</div><div class="line">273</div><div class="line">274</div><div class="line">275</div><div class="line">276</div><div class="line">277</div><div class="line">278</div><div class="line">279</div><div class="line">280</div><div class="line">281</div><div class="line">282</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#coding:utf8</span></div><div class="line"></div><div class="line">import requests</div><div class="line">import json</div><div class="line">import time</div><div class="line">import datetime</div><div class="line">import pymssql</div><div class="line">import MySQLdb</div><div class="line"><span class="comment">#import sys</span></div><div class="line"><span class="comment">#reload(sys)  </span></div><div class="line"><span class="comment">#sys.setdefaultencoding('utf8')</span></div><div class="line"></div><div class="line"><span class="comment">#mssql连接参数</span></div><div class="line">host=<span class="string">'192.168.1.15'</span></div><div class="line">user=<span class="string">'sa'</span></div><div class="line">password=<span class="string">'fasoftserver'</span></div><div class="line">database=<span class="string">'famsdb'</span></div><div class="line"></div><div class="line">headers = &#123;</div><div class="line">    <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'</span>,</div><div class="line">    <span class="string">'Host'</span>: <span class="string">'app.finance.sina.com.cn'</span></div><div class="line">&#125;</div><div class="line"></div><div class="line">def toDt(timestamp,flag):</div><div class="line">    <span class="comment">#转换成localtime</span></div><div class="line">    time_local = time.localtime(timestamp)</div><div class="line">    <span class="comment">#转换成新的时间格式(2016-05-05 20:28:54)</span></div><div class="line">    fmt = <span class="string">""</span></div><div class="line">    <span class="keyword">if</span> flag==0:</div><div class="line">        fmt = <span class="string">"%Y-%m-%d %H:%M:%S"</span></div><div class="line">    <span class="keyword">elif</span> flag==1:</div><div class="line">        fmt = <span class="string">"%Y-%m-%d"</span></div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        fmt = <span class="string">"%H:%M:%S"</span></div><div class="line">        </div><div class="line">    dt = time.strftime(fmt,time_local)</div><div class="line">    <span class="comment">#print dt</span></div><div class="line">    <span class="built_in">return</span> dt</div><div class="line"></div><div class="line">def getDt(flag):</div><div class="line">    fmt = <span class="string">""</span></div><div class="line">    <span class="keyword">if</span> flag==0:</div><div class="line">        fmt = <span class="string">"%Y-%m-%d %H:%M:%S"</span></div><div class="line">    <span class="keyword">elif</span> flag==1:</div><div class="line">        fmt = <span class="string">"%Y-%m-%d"</span></div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        fmt = <span class="string">"%H:%M:%S"</span></div><div class="line"></div><div class="line">    dt = datetime.datetime.now().strftime(fmt)</div><div class="line">    <span class="comment">#print dt</span></div><div class="line">    <span class="built_in">return</span> dt</div><div class="line"></div><div class="line">def isNone(v):</div><div class="line">    <span class="keyword">if</span> not v:</div><div class="line">        <span class="built_in">return</span> <span class="string">''</span></div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="built_in">return</span> v</div><div class="line"></div><div class="line"></div><div class="line">def insertMysql(uuid,classid,title,desc,content,author,url,pubtime):</div><div class="line">    try:  </div><div class="line">        conn=MySQLdb.connect(host=<span class="string">'localhost'</span>,user=<span class="string">'root'</span>,passwd=<span class="string">'123456'</span>,port=3306, db=<span class="string">'love'</span>, charset=<span class="string">'utf8'</span>)  </div><div class="line">        cur=conn.cursor()</div><div class="line">        <span class="comment">#查看记录是否存在</span></div><div class="line">        sql = <span class="string">"select * from NEWS where UUID = '%s' "</span> % uuid</div><div class="line">        count = cur.execute(sql)</div><div class="line">        <span class="comment">#print 'count:%d' % count</span></div><div class="line">        <span class="keyword">if</span> count == 0:</div><div class="line">            myother = 1 <span class="comment">#原创或转载 0：原创 1：转载</span></div><div class="line">            top = 0 <span class="comment">#是否置顶  0：否 1：是</span></div><div class="line">            hits = 1 <span class="comment">#点击次数</span></div><div class="line">            status = 1 <span class="comment">#新闻状态 0:未发布 1:已发布</span></div><div class="line">            editor = <span class="string">'cwgw_admin'</span> <span class="comment">#编辑人</span></div><div class="line">            sql = <span class="string">''</span><span class="string">'insert into NEWS(UUID,CLASSID,MYOTHER,TITLE,INTRO,CONTENT,AUTHOR,EDITOR,URL,TOP,PUBTIME,HITS,STAT)</span></div><div class="line"><span class="string">                    values('</span>%s<span class="string">', '</span>%s<span class="string">', %d, '</span>%s<span class="string">', '</span>%s<span class="string">', '</span>%s<span class="string">', '</span>%s<span class="string">', '</span>%s<span class="string">', '</span>%s<span class="string">', %d, '</span>%s<span class="string">', %d, %d)</span></div><div class="line"><span class="string">                 '</span><span class="string">''</span> \</div><div class="line">                % (uuid,classid,myother,title,desc,content,author,editor,url,top,pubtime,hits,status)</div><div class="line"></div><div class="line">            <span class="comment">#插入数据</span></div><div class="line">            <span class="comment">#print sql</span></div><div class="line">            cur.execute(sql)</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            <span class="built_in">print</span> u<span class="string">'uuid=%s,title=%s,author=%s,pubtime=%s 该记录已存在'</span> % (uuid,title,author,pubtime)</div><div class="line"></div><div class="line">    <span class="comment">#异常处理</span></div><div class="line">    except MySQLdb.Error,e:  </div><div class="line">        <span class="built_in">print</span> <span class="string">"Mysql Error %d: %s"</span> % (e.args[0], e.args[1]) </div><div class="line">    finally:</div><div class="line">        cur.close()</div><div class="line">        conn.commit()</div><div class="line">        conn.close()</div><div class="line"></div><div class="line">def insert(uuid,classid,title,desc,content,author,url,pubtime):</div><div class="line">    try:  </div><div class="line">        <span class="comment">#conn=pymssql.connect(host=host, user=user, password=password, database=database, charset='utf8')</span></div><div class="line">        conn=pymssql.connect(host=host, user=user, password=password, database=database)</div><div class="line">        cur=conn.cursor()</div><div class="line"></div><div class="line">        <span class="comment">#查看记录是否存在</span></div><div class="line">        sql = <span class="string">"select * from NEWS where UUID = '%s' "</span> % uuid</div><div class="line">        cur.execute(sql)</div><div class="line">        count = int(cur.rowcount)</div><div class="line">        count = cur.rowcount</div><div class="line">        <span class="comment">#print 'count:%d' % count</span></div><div class="line">        <span class="keyword">if</span> count == 0:</div><div class="line">            myother = 1 <span class="comment">#原创或转载 0：原创 1：转载</span></div><div class="line">            top = 0 <span class="comment">#是否置顶  0：否 1：是</span></div><div class="line">            hits = 1 <span class="comment">#点击次数</span></div><div class="line">            status = 1 <span class="comment">#新闻状态 0:未发布 1:已发布</span></div><div class="line">            editor = <span class="string">'cwgw_admin'</span> <span class="comment">#编辑人</span></div><div class="line">            sql = <span class="string">''</span><span class="string">'insert into NEWS([UUID],[CLASSID],[MYOTHER],[TITLE],[DESC],[CONTENT],[AUTHOR],[EDITOR],[FROM],[TOP],[PUBTIME],[HITS],[STATUS])</span></div><div class="line"><span class="string">                    values('</span>%s<span class="string">', '</span>%s<span class="string">', %d, '</span>%s<span class="string">', '</span>%s<span class="string">', '</span>%s<span class="string">', '</span>%s<span class="string">', '</span>%s<span class="string">', '</span>%s<span class="string">', %d, '</span>%s<span class="string">', %d, %d)</span></div><div class="line"><span class="string">                 '</span><span class="string">''</span> \</div><div class="line">                % (uuid,classid,myother,title,desc,content,author,editor,url,top,pubtime,hits,status)</div><div class="line"></div><div class="line">            <span class="comment">#插入数据</span></div><div class="line">            <span class="comment">#print sql</span></div><div class="line">            cur.execute(sql)</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            <span class="built_in">print</span> u<span class="string">'uuid=%s,title=%s,author=%s,pubtime=%s 该记录已存在'</span> % (uuid,title,author,pubtime)</div><div class="line"></div><div class="line">    <span class="comment">#异常处理</span></div><div class="line">    except pymssql.Error,e:  </div><div class="line">        <span class="built_in">print</span> <span class="string">"Mssql Error %d: %s"</span> % (e.args[0], e.args[1]) </div><div class="line">    finally:</div><div class="line">        cur.close()</div><div class="line">        conn.commit()</div><div class="line">        conn.close()</div><div class="line"></div><div class="line">def getContent(url, classid):</div><div class="line">    try:</div><div class="line">        uuid = url[<span class="string">'uud'</span>]</div><div class="line">        docid = url[<span class="string">'docid'</span>]</div><div class="line">        title = url[<span class="string">'title'</span>]</div><div class="line">        intro = url[<span class="string">'intro'</span>]</div><div class="line">        media = url[<span class="string">'media'</span>]</div><div class="line">        author = url[<span class="string">'author'</span>]</div><div class="line">        url = url[<span class="string">'url'</span>]</div><div class="line">        <span class="comment">#pubtime = toDt(url['ctime'],1)</span></div><div class="line">        ty = <span class="string">""</span></div><div class="line">        <span class="keyword">if</span> classid == 1:</div><div class="line">            ty = <span class="string">"stock"</span></div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            ty = <span class="string">"finance"</span></div><div class="line">        <span class="built_in">print</span> u<span class="string">"%s:读取文章:%s,%s,%s,%s,%s"</span> %(getDt(2),uuid,docid,title,media,url)</div><div class="line"></div><div class="line">        curl = <span class="string">"http://app.finance.sina.com.cn/toutiao/content?format=json&amp;url="</span>+url+<span class="string">"&amp;zxtype="</span>+ty+<span class="string">"&amp;docid="</span>+docid+<span class="string">"&amp;wm=b122&amp;from=7041995012&amp;chwm=32040_0002&amp;imei=1ec8a83b337a0571&amp;filter=1&amp;type=1"</span></div><div class="line">        <span class="comment">#print "%s,%s,%s" % (curl,ty,docid)</span></div><div class="line">        r = requests.get(curl, headers=headers)</div><div class="line">        <span class="comment">#print r.content</span></div><div class="line">        data = json.loads(r.content)</div><div class="line">        title = data[<span class="string">'result'</span>][<span class="string">'data'</span>][0][<span class="string">'title'</span>]</div><div class="line">        content = data[<span class="string">'result'</span>][<span class="string">'data'</span>][0][<span class="string">'content'</span>]</div><div class="line">        fromurl = data[<span class="string">'result'</span>][<span class="string">'data'</span>][0][<span class="string">'url'</span>]</div><div class="line">        createdt = data[<span class="string">'result'</span>][<span class="string">'data'</span>][0][<span class="string">'createdatetime'</span>]</div><div class="line">        encoding = data[<span class="string">'result'</span>][<span class="string">'encoding'</span>]</div><div class="line">        <span class="comment">#print encoding</span></div><div class="line"></div><div class="line">        <span class="comment">#print createdt,type(createdt)</span></div><div class="line">        <span class="comment">#dt = createdt.encode('utf-8')</span></div><div class="line">        </div><div class="line">        fmt = <span class="string">'%a, %d %b %Y %H:%M:%S +0800'</span></div><div class="line">        <span class="built_in">times</span> = time.strptime(createdt, fmt)  </div><div class="line">        pubtime = time.strftime(<span class="string">"%Y/%m/%d %H:%M:%S"</span>, <span class="built_in">times</span>)  </div><div class="line">        <span class="comment">#print u"%s,%s,%s,%s" %(title,content,url,pubtime)</span></div><div class="line">        <span class="comment">#print title,type(title)</span></div><div class="line">        <span class="comment">#title = title.encode("utf-8", "ignore")</span></div><div class="line"></div><div class="line">        content = content.replace(<span class="string">'\'</span><span class="string">','</span><span class="string">"')</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">        insert(uuid,classid,title,intro,content,author,fromurl,pubtime)</span></div><div class="line"><span class="string">        #insertMysql(uuid,classid,title,intro,content,author,fromurl,pubtime)</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">        #time.sleep(0.3)</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">    except Exception,e:</span></div><div class="line"><span class="string">        print str(e)</span></div><div class="line"><span class="string">        print u"</span>读取文章异常:uuid=%s<span class="string">" % uuid</span></div><div class="line"><span class="string">    </span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">def getUrl(did, classid, down, up, ishot):</span></div><div class="line"><span class="string">    urls = []</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">    ty = "</span><span class="string">"</span></div><div class="line"><span class="string">    if classid == 1:</span></div><div class="line"><span class="string">        ty = "</span>stock<span class="string">"</span></div><div class="line"><span class="string">    else:</span></div><div class="line"><span class="string">        ty = "</span>finance<span class="string">"</span></div><div class="line"><span class="string">    </span></div><div class="line"><span class="string">    url = "</span>http://app.finance.sina.com.cn/news/tianyi/index?chwm=32040_0002&amp;wm=b122&amp;from=7041995012&amp;imei=1ec8a83b337a0571&amp;action=1&amp;net_type=2&amp;uid=&amp;did=<span class="string">"+did+"</span>&amp;deviceid=<span class="string">"+did+"</span>&amp;down=<span class="string">"+str(down)+"</span>&amp;<span class="built_in">type</span>=<span class="string">"+ty+"</span>&amp;up=<span class="string">"+str(up)</span></div><div class="line"><span class="string">    if ishot:</span></div><div class="line"><span class="string">        url = "</span>http://app.finance.sina.com.cn/news/tianyi/index?did=<span class="string">"+did+"</span>&amp;deviceid=<span class="string">"+did+"</span>&amp;down=<span class="string">"+str(down)+"</span>&amp;<span class="built_in">type</span>=<span class="string">"+ty+"</span>&amp;up=<span class="string">"+str(up)</span></div><div class="line"><span class="string">        </span></div><div class="line"><span class="string">    r = requests.get(url, headers=headers)</span></div><div class="line"><span class="string">    #print r.content</span></div><div class="line"><span class="string">    print "</span><span class="built_in">type</span>:%s,down:%d,page:%d<span class="string">" %(ty,down,up)</span></div><div class="line"><span class="string">    try:</span></div><div class="line"><span class="string">        data = json.loads(r.content)</span></div><div class="line"><span class="string">        for c in data['data']['feed']['data']:</span></div><div class="line"><span class="string">            try:</span></div><div class="line"><span class="string">                uuid = c['uuid']</span></div><div class="line"><span class="string">                title = c['title']</span></div><div class="line"><span class="string">                docid = c['docid']</span></div><div class="line"><span class="string">                media = c['media']</span></div><div class="line"><span class="string">                url = c['url']</span></div><div class="line"><span class="string">                intro = c['intro']</span></div><div class="line"><span class="string">                author = c['author']</span></div><div class="line"><span class="string">                ctime = c['ctime']</span></div><div class="line"><span class="string">                #orgUrl = c['orgUrl']</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">                print u"</span>%s,%s,%s,%s,%s<span class="string">" %(uuid,title,docid,media,toDt(ctime,0))</span></div><div class="line"><span class="string">                item = &#123;</span></div><div class="line"><span class="string">                    'uud': uuid,</span></div><div class="line"><span class="string">                    'docid': docid,</span></div><div class="line"><span class="string">                    'title': title,</span></div><div class="line"><span class="string">                    'url': url,</span></div><div class="line"><span class="string">                    'intro': intro,</span></div><div class="line"><span class="string">                    'media': media,</span></div><div class="line"><span class="string">                    'author': author,</span></div><div class="line"><span class="string">                    'ctime': ctime</span></div><div class="line"><span class="string">                &#125;</span></div><div class="line"><span class="string">                today = datetime.datetime.now().strftime('%Y-%m-%d')</span></div><div class="line"><span class="string">                curday = toDt(ctime,1)</span></div><div class="line"><span class="string">                if today == curday:</span></div><div class="line"><span class="string">                    #print today,curday</span></div><div class="line"><span class="string">                    urls.append(item)</span></div><div class="line"><span class="string">                #time.sleep(0.3)</span></div><div class="line"><span class="string">                </span></div><div class="line"><span class="string">            except Exception,e:</span></div><div class="line"><span class="string">                print str(e)</span></div><div class="line"><span class="string">                print u"</span>读取新闻列表异常:uuid=%s<span class="string">" % uuid</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">        return urls</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">    except Exception,e:</span></div><div class="line"><span class="string">        print str(e)</span></div><div class="line"><span class="string">        return False</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">def parse_list(urls, classid):</span></div><div class="line"><span class="string">    if urls:</span></div><div class="line"><span class="string">        for url in urls:</span></div><div class="line"><span class="string">            getContent(url, classid)</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">def reduce(lists):</span></div><div class="line"><span class="string">    newsList = []</span></div><div class="line"><span class="string">    if lists:</span></div><div class="line"><span class="string">        for news in lists:</span></div><div class="line"><span class="string">            if news not in newsList:</span></div><div class="line"><span class="string">                newsList.append(news)</span></div><div class="line"><span class="string">    return newsList</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">def getData(classid, max_down, max_page): </span></div><div class="line"><span class="string">    print u'%s:classid=%d:开始抓取分类文章列表...' %(getDt(2),classid)</span></div><div class="line"><span class="string">    </span></div><div class="line"><span class="string">    did = "</span>1ec8a83b337a0571<span class="string">"</span></div><div class="line"><span class="string">    down = 0</span></div><div class="line"><span class="string">    page = 1</span></div><div class="line"><span class="string">    lists = []</span></div><div class="line"><span class="string">    while down &lt; max_down:</span></div><div class="line"><span class="string">        while page &lt;= max_page:</span></div><div class="line"><span class="string">            urls = getUrl(did, classid, down, page, False)</span></div><div class="line"><span class="string">            if urls:</span></div><div class="line"><span class="string">                #parse_list(urls, classid)</span></div><div class="line"><span class="string">                lists += urls</span></div><div class="line"><span class="string">            page += 1</span></div><div class="line"><span class="string">        down += 1</span></div><div class="line"><span class="string">        page = 1</span></div><div class="line"><span class="string">    </span></div><div class="line"><span class="string">    print u'%s:classid=%d:抓取分类文章列表完成,共抓取%d条' %(getDt(2),classid, len(lists))</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">    print u'开始去除重复列表...'</span></div><div class="line"><span class="string">    reduceList = reduce(lists)</span></div><div class="line"><span class="string">    print u'去重完成,去重后剩余%d条' % len(reduceList)</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">    print u'%s:classid=%d:开始读取分类文章...' %(getDt(2),classid)</span></div><div class="line"><span class="string">    parse_list(reduceList, classid)</span></div><div class="line"><span class="string">    print u'%s:classid=%d:读取分类文章完成...' %(getDt(2),classid)</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">classid = 1 #1: stock 2: finance</span></div><div class="line"><span class="string">getData(1,5,20)</span></div><div class="line"><span class="string">getData(2,2,20)</span></div></pre></td></tr></table></figure>
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -186,16 +208,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/05/sina-news-app/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/12/05/sina-news-app/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/11/14/tongcheng-user/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Use Python Download Tongcheng User Info</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -215,287 +296,14 @@
 
 
 
-
   
-    <article id="post-tongcheng-user" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/14/tongcheng-user/">Use Python Download Tongcheng User Info</a>
-    </h1>
   
 
-        
-        <a href="/2017/11/14/tongcheng-user/" class="archive-article-date">
-  	<time datetime="2017-11-14T04:24:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用python 下载一个手机同城交友软件上所有女性资料，并保存到mysql数据中。</p>
-<p>用户信息：</p>
-<p>所有省份，身高155~180cm, 年龄20-40岁之间</p>
-<p>附python源码</p>
-        
-          <a class="article-more-a" href="/2017/11/14/tongcheng-user/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/14/tongcheng-user/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-download-xiaoshuo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/14/download-xiaoshuo/">Use Python Download Xiao Shuo</a>
-    </h1>
   
 
-        
-        <a href="/2017/11/14/download-xiaoshuo/" class="archive-article-date">
-  	<time datetime="2017-11-14T04:12:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用python 下载 <a href="http://www.kenshu.cc/" target="_blank" rel="external">啃书小说网</a> 指定小说的所有文章到一个txt文件。</p>
-<p>使用方法：</p>
-<p>输入小说目录首页地址，如：</p>
-<p>师娘，别玩火（作者：推窗望岳）的目录首页为：</p>
-<p><a href="http://www.kenshu.cc/xiaoshuo/31109/0/" target="_blank" rel="external">http://www.kenshu.cc/xiaoshuo/31109/0/</a></p>
-<p>附python源码</p>
-        
-          <a class="article-more-a" href="/2017/11/14/download-xiaoshuo/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/14/download-xiaoshuo/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-my-first-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/30/my-first-blog/">My First Blog</a>
-    </h1>
   
 
-        
-        <a href="/2017/10/30/my-first-blog/" class="archive-article-date">
-  	<time datetime="2017-10-30T07:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用github pages服务搭建博客的好处有：</p>
-<ol>
-<li>全是静态文件，访问速度快；</li>
-<li>免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；</li>
-<li>可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；</li>
-</ol>
-        
-          <a class="article-more-a" href="/2017/10/30/my-first-blog/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/10/30/my-first-blog/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/30/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2017/10/30/hello-world/" class="archive-article-date">
-  	<time datetime="2017-10-30T07:01:06.770Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/10/30/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -518,8 +326,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
