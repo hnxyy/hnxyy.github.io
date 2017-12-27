@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017/12 | Hnxyy&#39;s Blog</title>
+  <title>Csdn Blog Spilder | Hnxyy&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hnxyy&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2017/12/index.html">
+  <meta name="description" content="前言使用python 下载CSDN Blog指定用户的博客文章。 使用方法： CBB.py http://blog.csdn.net/lmj623565791/ 附python源码">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Csdn Blog Spilder">
+<meta property="og:url" content="http://yoursite.com/2017/12/27/csdn-blog/index.html">
 <meta property="og:site_name" content="Hnxyy&#39;s Blog">
+<meta property="og:description" content="前言使用python 下载CSDN Blog指定用户的博客文章。 使用方法： CBB.py http://blog.csdn.net/lmj623565791/ 附python源码">
+<meta property="og:updated_time" content="2017-12-27T04:42:19.593Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hnxyy&#39;s Blog">
+<meta name="twitter:title" content="Csdn Blog Spilder">
+<meta name="twitter:description" content="前言使用python 下载CSDN Blog指定用户的博客文章。 使用方法： CBB.py http://blog.csdn.net/lmj623565791/ 附python源码">
   
     <link rel="alternative" href="/atom.xml" title="Hnxyy&#39;s Blog" type="application/atom+xml">
   
@@ -149,295 +153,233 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-csdn-blog" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Csdn Blog Spilder
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/27/csdn-blog/" class="archive-article-date">
+
+        
+        <a href="/2017/12/27/csdn-blog/" class="archive-article-date">
   	<time datetime="2017-12-27T04:40:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-27</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/27/csdn-blog/">Csdn Blog Spilder</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用python 下载CSDN Blog指定用户的博客文章。</p>
+<p>使用方法：</p>
+<p>CBB.py <a href="http://blog.csdn.net/lmj623565791/" target="_blank" rel="external">http://blog.csdn.net/lmj623565791/</a></p>
+<p>附python源码</p>
+<a id="more"></a>
+<p>``` bash</p>
+<h1 id="coding-utf-8"><a href="#coding-utf-8" class="headerlink" title="coding=utf-8"></a>coding=utf-8</h1><p>import sys<br>import requests<br>from pyquery import PyQuery as pq<br>from time import strftime<br>import re</p>
+<p>headers = {‘User-Agent’:’Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36’}</p>
+<p>def getBetween(str, str1, str2):<br>    strOutput = str[str.find(str1)+len(str1):str.find(str2)]<br>    return strOutput</p>
+<p>def getUrl(url):<br>    urls = []<br>    try:<br>        r=requests.get(url,headers=headers)<br>        d = pq(r.content)</p>
+<pre><code>    #d = pq(url=url,encoding=&quot;utf8&quot;)
+    #print d
+    itemlist = d(&apos;div[class=&quot;list_item article_item&quot;]&apos;)
+    for item in itemlist.items():
+        itemDiv = item(&apos;div[class=&quot;article_title&quot;]&apos;)
+        itemSpan = itemDiv(&apos;span[class=&quot;link_title&quot;]&apos;)
+        href = itemSpan(&apos;a&apos;).attr(&apos;href&apos;)
+        title = itemSpan(&apos;a&apos;).html()
+        url = &quot;http://blog.csdn.net&quot; + href
+        #print url,title
+        urls.append(url)
 
-        <div class="article-info info-on-right">
-          
-          
+    return urls
 
+except Exception,e:
+    print str(e)
+    print u&apos;读取目录出错...&apos;
+    return False
+</code></pre><p>strUsage = “Usage: CBB.py <csdn blog="" url="">\n\nExample:\nCBB.py <a href="http://blog.csdn.net/guolin_blog\n" target="_blank" rel="external">http://blog.csdn.net/guolin_blog\n</a>“</csdn></p>
+<p>try :<br>    strUserInput = sys.argv[1]<br>except :<br>    print strUsage<br>    sys.exit(0)</p>
+<p>if strUserInput.find(“<a href="http://blog.csdn.net/" target="_blank" rel="external">http://blog.csdn.net/</a>“) == -1 or len(strUserInput) &lt;= 21 :<br>    print strUsage<br>    sys.exit(0)</p>
+<p>urlList = []<br>r=requests.get(strUserInput,headers=headers)<br>d = pq(r.content)</p>
+<p>title = d(‘title’).html()<br>strBlogName = getBetween(title, “”, “ - CSDN博客”)<br>pageLab = d(‘div[class=”pagelist”]’)(‘span’).html()<br>strTotalCount = getBetween(pageLab, “ “, “条”)</p>
+<p>#strPageCount = getBetween(pageLab, “共”, “页”)<br>s = pageLab.find(“共”)<br>e = pageLab.find(“页”)<br>strPageCount = pageLab[s+1:e]<br>intTotalCount = int(strTotalCount)<br>intPageCount = int(strPageCount)<br>print u’%s - %d条 - 共%d页’ %(strBlogName,intTotalCount,intPageCount)</p>
+<p>print u’开始读取目录…’<br>for intCurrentPage in range(intPageCount) :<br>    print str(intCurrentPage + 1)<br>    strListURL = strUserInput + “/article/list/“ + str(intCurrentPage + 1)<br>    urls = getUrl(strListURL)<br>    if urls:<br>        urlList.extend(urls)</p>
+<p>print u’读取目录完成…’        </p>
+<p>intCounter    = 0<br>strHTML4Index = “”</p>
+<p>for url in urlList :<br>    intCounter  = intCounter + 1<br>    print url<br>    r=requests.get(url,headers=headers)<br>    d = pq(r.content)</p>
+<pre><code>#Parse blog title
+blogTitle = d(&apos;title&apos;).html()
+strBlogPostTitle = blogTitle.replace(&quot; - CSDN博客&quot;, &quot;&quot;)
+strBlogPostTitle = strBlogPostTitle.replace(&quot; - &quot; + strBlogName, &quot;&quot;)
+print strBlogPostTitle
+
+#Parse blog post
+strBlogPostBody = d(&apos;div[id=&quot;article_content&quot;]&apos;).html()
+
+#替换&lt;blockquote&gt;&lt;p&gt;
+blocks = re.findall(r&quot;&lt;blockquote.*?&lt;\/blockquote&gt;&quot;, strBlogPostBody, re.I|re.S|re.M)
+for block in blocks:  
+    strBlogPostBody = strBlogPostBody.replace(block, &apos;&apos;)
+#替换script
+scripts = re.findall(r&quot;&lt;script.*?type=.*?&lt;\/script&gt;&quot;, strBlogPostBody, re.I|re.S|re.M)  
+for script in scripts:  
+    strBlogPostBody = strBlogPostBody.replace(script, &apos;&apos;)
+strBlogPostBody = strBlogPostBody.encode(&quot;utf8&quot;, &quot;ignore&quot;)
+#print strBlogPostBody
+
+#Parse blog timestamp
+strBlogPostTime  = d(&apos;span[class=&quot;link_postdate&quot;]&apos;).html()
+print strBlogPostTime
+
+#Write into local file
+strLocalFilename = &quot;Post_&quot; + str(intCounter) + &quot;.html&quot;
+strHTML4Post = &quot;&lt;html&gt;\n&lt;head&gt;\n&lt;meta http-equiv=&apos;Content-Type&apos; content=&apos;text/html; charset=utf-8&apos; /&gt;\n&lt;title&gt;&quot; + strBlogPostTitle + &quot;&lt;/title&gt;\n&quot;
+#strHTML4Post += &quot;&lt;link href=&apos;css/style.css&apos; type=&apos;text/css&apos; rel=&apos;stylesheet&apos; /&gt;\n&lt;/head&gt;\n&quot;
+strHTML4Post += &quot;&lt;link href=&apos;http://static.blog.csdn.net/skin/skin-yellow/css/style.css?v=1.4&apos; type=&apos;text/css&apos; rel=&apos;stylesheet&apos; /&gt;\n&lt;/head&gt;\n&quot;
+strHTML4Post += &quot;&lt;body&gt;\n&lt;div id=&apos;container&apos;&gt;&lt;div id=&apos;body&apos;&gt;&lt;div id=&apos;main&apos;&gt;&lt;div class=&apos;main&apos;&gt;&lt;p&gt;&lt;a href=&apos;index.html&apos;&gt;返回目录&lt;/a&gt;&lt;/p&gt;\n&quot;
+strHTML4Post += &quot;&lt;div id=&apos;article_details&apos; class=&apos;details&apos;&gt;&lt;h2&gt;&quot; + strBlogPostTitle + &quot;&lt;/h2&gt;\n&lt;p&gt;By: &lt;em&gt;&quot; + strBlogName
+strHTML4Post +=  &quot;&lt;/em&gt; 原文发布于：&lt;em&gt;&quot; + strBlogPostTime + &quot;&lt;/em&gt;&lt;/p&gt;\n&lt;div id=&apos;article_content&apos; class=&apos;article_content tracking-ad&apos;&gt;&quot;
+strHTML4Post += strBlogPostBody + &quot;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;\n&lt;/html&gt;&quot;
+objFileArticle = open(strLocalFilename, &quot;w&quot;)
+objFileArticle.write(strHTML4Post);
+objFileArticle.close
+
+strHTML4Index = strHTML4Index + &apos;&lt;li&gt;&lt;a href=&quot;&apos; + strLocalFilename + &apos;&quot;&gt;&apos; + strBlogPostTitle + &apos;&lt;/a&gt;&lt;/li&gt;\n&apos;
+
+print intCounter , &quot;/&quot;, intTotalCount
+</code></pre><p>strCurrentTimestamp = str(strftime(“%Y-%m-%d %H:%M:%S”))<br>strHTML4 = “<html>\n<head>\n<meta http-equiv="" content-type""="" content="" text="" html;="" charset="utf-8""">\n”<br>strHTML4 += “<title>“ + strBlogName + “博客文章汇总</title>\n</head>\n<body>\n<h2>CSDN博客：” + strBlogName + “</h2>\n”<br>strHTML4 += “<p>共” + strTotalCount + “篇文章，最后更新：<em>“ + strCurrentTimestamp + “</em></p>\n<ol>\n” + strHTML4Index + “\n</ol>\n</body>\n</html>“<br>objFileIndex = open(“index.html”, “w”)<br>objFileIndex.write(strHTML4);<br>objFileIndex.close</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/12/27/csdn-blog/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/11/stormzhang-yunying/" class="archive-article-date">
-  	<time datetime="2017-12-11T03:10:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-11</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/12/11/stormzhang-yunying/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">从我公号发展史来谈谈产品、运营 - stormzhang</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/11/stormzhang-yunying/">从我公号发展史来谈谈产品、运营 - stormzhang</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/11/stormzhang-chuangye/" class="archive-article-date">
-  	<time datetime="2017-12-11T02:50:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/11/stormzhang-chuangye/">我的一次创业投资史 - stormzhang</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/11/stormzhang-renzhi/" class="archive-article-date">
-  	<time datetime="2017-12-11T02:31:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/11/stormzhang-renzhi/">认知与知识 - stormzhang</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/11/stormzhang-yuedu/" class="archive-article-date">
-  	<time datetime="2017-12-11T02:21:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/11/stormzhang-yuedu/">我的阅读经验 - stormzhang</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/11/stormzhang-jiaxin/" class="archive-article-date">
-  	<time datetime="2017-12-11T02:11:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/11/stormzhang-jiaxin/">如何正确的提加薪？ - stormzhang</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/11/stormzhang-zhuanqian/" class="archive-article-date">
-  	<time datetime="2017-12-11T02:11:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/11/stormzhang-zhuanqian/">教你一些赚钱的套路 - stormzhang</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/11/stormzhang-jinrong/" class="archive-article-date">
-  	<time datetime="2017-12-11T02:01:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/11/stormzhang-jinrong/">给大家普及两点金融知识 - stormzhang</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/11/stormzhang-licai/" class="archive-article-date">
-  	<time datetime="2017-12-11T01:51:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/11/stormzhang-licai/">投资理财经验谈 - stormzhang</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/11/stormzhang-zatan/" class="archive-article-date">
-  	<time datetime="2017-12-11T01:41:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/11/stormzhang-zatan/">数据、产品、营销、技术杂谈 - stormzhang</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2017/12/page/2/">2</a><a class="extend next" rel="next" href="/archives/2017/12/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -461,8 +403,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
