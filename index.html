@@ -151,6 +151,77 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-xsdowns-db" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/06/10/xsdowns-db/">download kenshu.cc and save mysql database</a>
+    </h1>
+  
+
+        
+        <a href="/2018/06/10/xsdowns-db/" class="archive-article-date">
+  	<time datetime="2018-06-10T04:40:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用python 下载 m.kenshu.cc 所有小说 并 按章节内容 保存到 MySQL 数据库里。</p>
+<p>使用方法：</p>
+<p>xsdown.py <a href="https://m.kenshu.cc/modules/article/search.php" target="_blank" rel="external">https://m.kenshu.cc/modules/article/search.php</a></p>
+<p>mysql数据库表结构：</p>
+<p>CREATE TABLE <code>novel</code> (<br>    <code>id</code> VARCHAR(20) NOT NULL,<br>    <code>title</code> VARCHAR(50) NOT NULL,<br>    <code>url</code> VARCHAR(200) NULL DEFAULT NULL,<br>    <code>intro</code> VARCHAR(200) NULL DEFAULT NULL,<br>    <code>author</code> VARCHAR(20) NULL DEFAULT NULL,<br>    <code>tag</code> VARCHAR(20) NULL DEFAULT NULL,<br>    <code>cover</code> VARCHAR(200) NULL DEFAULT NULL,<br>    <code>status</code> CHAR(1) NULL DEFAULT NULL COMMENT ‘0:未完成 1:已完成’,<br>    <code>dt</code> VARCHAR(20) NULL DEFAULT NULL,<br>    PRIMARY KEY (<code>id</code>)<br>)<br>COLLATE=’utf8_general_ci’<br>ENGINE=InnoDB<br>;</p>
+<p>CREATE TABLE <code>section</code> (<br>    <code>id</code> VARCHAR(20) NOT NULL,<br>    <code>section_id</code> VARCHAR(20) NOT NULL,<br>    <code>section_title</code> VARCHAR(50) NOT NULL,<br>    <code>section_url</code> VARCHAR(200) NULL DEFAULT NULL,<br>    <code>section_content</code> TEXT NULL,<br>    <code>dt</code> VARCHAR(20) NULL DEFAULT NULL,<br>    PRIMARY KEY (<code>id</code>, <code>section_id</code>)<br>)<br>COMMENT=’小说章节内容’<br>COLLATE=’utf8_general_ci’<br>ENGINE=InnoDB<br>;</p>
+<p>附python源码</p>
+        
+          <a class="article-more-a" href="/2018/06/10/xsdowns-db/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/06/10/xsdowns-db/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-sina-blog - v2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -737,73 +808,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/12/11/stormzhang-renzhi/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-stormzhang-yuedu" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/11/stormzhang-yuedu/">我的阅读经验 - stormzhang</a>
-    </h1>
-  
-
-        
-        <a href="/2017/12/11/stormzhang-yuedu/" class="archive-article-date">
-  	<time datetime="2017-12-11T02:21:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>我的阅读经验</p>
-<p>（还记得只字不差的阅读么？）</p>
-<p>我之前跟大家说过，我现在特别喜欢阅读，我每天平均的阅读量大概在 5w 字左右，差不多每天阅读的总时间在 1 小时左右，有人说，听起来不过每天就一小时的阅读时间而已，然而常年累月坚持下去，这个习惯会极大的提升自己。</p>
-        
-          <a class="article-more-a" href="/2017/12/11/stormzhang-yuedu/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/11/stormzhang-yuedu/">展开全文 >></a>
         </p>
       
 

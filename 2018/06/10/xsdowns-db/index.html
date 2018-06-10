@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Hnxyy&#39;s Blog</title>
+  <title>download kenshu.cc and save mysql database | Hnxyy&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hnxyy&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="前言使用python 下载 m.kenshu.cc 所有小说 并 按章节内容 保存到 MySQL 数据库里。 使用方法： xsdown.py https://m.kenshu.cc/modules/article/search.php mysql数据库表结构： CREATE TABLE novel (    id VARCHAR(20) NOT NULL,    title VARCHAR(50)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="download kenshu.cc and save mysql database">
+<meta property="og:url" content="http://yoursite.com/2018/06/10/xsdowns-db/index.html">
 <meta property="og:site_name" content="Hnxyy&#39;s Blog">
+<meta property="og:description" content="前言使用python 下载 m.kenshu.cc 所有小说 并 按章节内容 保存到 MySQL 数据库里。 使用方法： xsdown.py https://m.kenshu.cc/modules/article/search.php mysql数据库表结构： CREATE TABLE novel (    id VARCHAR(20) NOT NULL,    title VARCHAR(50)">
+<meta property="og:updated_time" content="2018-06-10T02:00:37.226Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hnxyy&#39;s Blog">
+<meta name="twitter:title" content="download kenshu.cc and save mysql database">
+<meta name="twitter:description" content="前言使用python 下载 m.kenshu.cc 所有小说 并 按章节内容 保存到 MySQL 数据库里。 使用方法： xsdown.py https://m.kenshu.cc/modules/article/search.php mysql数据库表结构： CREATE TABLE novel (    id VARCHAR(20) NOT NULL,    title VARCHAR(50)">
   
     <link rel="alternative" href="/atom.xml" title="Hnxyy&#39;s Blog" type="application/atom+xml">
   
@@ -149,305 +153,162 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-xsdowns-db" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      download kenshu.cc and save mysql database
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/06/10/xsdowns-db/" class="archive-article-date">
+
+        
+        <a href="/2018/06/10/xsdowns-db/" class="archive-article-date">
   	<time datetime="2018-06-10T04:40:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-10</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/06/10/xsdowns-db/">download kenshu.cc and save mysql database</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+        
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/02/26/sina-blog - v2/" class="archive-article-date">
-  	<time datetime="2018-02-26T03:40:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/26/sina-blog - v2/">Sina Blog &amp;&amp; Comment Spilder 第二版</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/26/sina-blog/" class="archive-article-date">
-  	<time datetime="2018-01-26T03:40:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/26/sina-blog/">Sina Blog &amp;&amp; Comment Spilder</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/18/csdn-blog/" class="archive-article-date">
-  	<time datetime="2018-01-18T04:40:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/18/csdn-blog/">Csdn Blog Spilder</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/07/sina-news-app/" class="archive-article-date">
-  	<time datetime="2018-01-07T08:57:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/07/sina-news-app/">Use Python Spilder Sina Finance App News</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
+    <div class="article-entry" itemprop="articleBody">
       
-        </div></section>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用python 下载 m.kenshu.cc 所有小说 并 按章节内容 保存到 MySQL 数据库里。</p>
+<p>使用方法：</p>
+<p>xsdown.py <a href="https://m.kenshu.cc/modules/article/search.php" target="_blank" rel="external">https://m.kenshu.cc/modules/article/search.php</a></p>
+<p>mysql数据库表结构：</p>
+<p>CREATE TABLE <code>novel</code> (<br>    <code>id</code> VARCHAR(20) NOT NULL,<br>    <code>title</code> VARCHAR(50) NOT NULL,<br>    <code>url</code> VARCHAR(200) NULL DEFAULT NULL,<br>    <code>intro</code> VARCHAR(200) NULL DEFAULT NULL,<br>    <code>author</code> VARCHAR(20) NULL DEFAULT NULL,<br>    <code>tag</code> VARCHAR(20) NULL DEFAULT NULL,<br>    <code>cover</code> VARCHAR(200) NULL DEFAULT NULL,<br>    <code>status</code> CHAR(1) NULL DEFAULT NULL COMMENT ‘0:未完成 1:已完成’,<br>    <code>dt</code> VARCHAR(20) NULL DEFAULT NULL,<br>    PRIMARY KEY (<code>id</code>)<br>)<br>COLLATE=’utf8_general_ci’<br>ENGINE=InnoDB<br>;</p>
+<p>CREATE TABLE <code>section</code> (<br>    <code>id</code> VARCHAR(20) NOT NULL,<br>    <code>section_id</code> VARCHAR(20) NOT NULL,<br>    <code>section_title</code> VARCHAR(50) NOT NULL,<br>    <code>section_url</code> VARCHAR(200) NULL DEFAULT NULL,<br>    <code>section_content</code> TEXT NULL,<br>    <code>dt</code> VARCHAR(20) NULL DEFAULT NULL,<br>    PRIMARY KEY (<code>id</code>, <code>section_id</code>)<br>)<br>COMMENT=’小说章节内容’<br>COLLATE=’utf8_general_ci’<br>ENGINE=InnoDB<br>;</p>
+<p>附python源码</p>
+<a id="more"></a>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div><div class="line">217</div><div class="line">218</div><div class="line">219</div><div class="line">220</div><div class="line">221</div><div class="line">222</div><div class="line">223</div><div class="line">224</div><div class="line">225</div><div class="line">226</div><div class="line">227</div><div class="line">228</div><div class="line">229</div><div class="line">230</div><div class="line">231</div><div class="line">232</div><div class="line">233</div><div class="line">234</div><div class="line">235</div><div class="line">236</div><div class="line">237</div><div class="line">238</div><div class="line">239</div><div class="line">240</div><div class="line">241</div><div class="line">242</div><div class="line">243</div><div class="line">244</div><div class="line">245</div><div class="line">246</div><div class="line">247</div><div class="line">248</div><div class="line">249</div><div class="line">250</div><div class="line">251</div><div class="line">252</div><div class="line">253</div><div class="line">254</div><div class="line">255</div><div class="line">256</div><div class="line">257</div><div class="line">258</div><div class="line">259</div><div class="line">260</div><div class="line">261</div><div class="line">262</div><div class="line">263</div><div class="line">264</div><div class="line">265</div><div class="line">266</div><div class="line">267</div><div class="line">268</div><div class="line">269</div><div class="line">270</div><div class="line">271</div><div class="line">272</div><div class="line">273</div><div class="line">274</div><div class="line">275</div><div class="line">276</div><div class="line">277</div><div class="line">278</div><div class="line">279</div><div class="line">280</div><div class="line">281</div><div class="line">282</div><div class="line">283</div><div class="line">284</div><div class="line">285</div><div class="line">286</div><div class="line">287</div><div class="line">288</div><div class="line">289</div><div class="line">290</div><div class="line">291</div><div class="line">292</div><div class="line">293</div><div class="line">294</div><div class="line">295</div><div class="line">296</div><div class="line">297</div><div class="line">298</div><div class="line">299</div><div class="line">300</div><div class="line">301</div><div class="line">302</div><div class="line">303</div><div class="line">304</div><div class="line">305</div><div class="line">306</div><div class="line">307</div><div class="line">308</div><div class="line">309</div><div class="line">310</div><div class="line">311</div><div class="line">312</div><div class="line">313</div><div class="line">314</div><div class="line">315</div><div class="line">316</div><div class="line">317</div><div class="line">318</div><div class="line">319</div><div class="line">320</div><div class="line">321</div><div class="line">322</div><div class="line">323</div><div class="line">324</div><div class="line">325</div><div class="line">326</div><div class="line">327</div><div class="line">328</div><div class="line">329</div><div class="line">330</div><div class="line">331</div><div class="line">332</div><div class="line">333</div><div class="line">334</div><div class="line">335</div><div class="line">336</div><div class="line">337</div><div class="line">338</div><div class="line">339</div><div class="line">340</div><div class="line">341</div><div class="line">342</div><div class="line">343</div><div class="line">344</div><div class="line">345</div><div class="line">346</div><div class="line">347</div><div class="line">348</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># coding=utf-8</span></div><div class="line">import time</div><div class="line">import datetime</div><div class="line">import requests</div><div class="line">from pyquery import PyQuery as pq</div><div class="line">import re</div><div class="line">import MySQLdb</div><div class="line"></div><div class="line">headers = &#123;<span class="string">'User-Agent'</span>:<span class="string">'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'</span>&#125;</div><div class="line">novel_url = <span class="string">'https://m.kenshu.cc'</span></div><div class="line">host=<span class="string">'localhost'</span></div><div class="line">port=3306</div><div class="line">user=<span class="string">'root'</span></div><div class="line">password=<span class="string">'123456'</span></div><div class="line">database=<span class="string">'love'</span></div><div class="line">charset=<span class="string">'utf8'</span></div><div class="line"></div><div class="line">def insertNovel(novel):</div><div class="line">    try:  </div><div class="line">        conn=MySQLdb.connect(host=host,user=user,passwd=password,port=port, db=database, charset=charset)</div><div class="line">        cur=conn.cursor()</div><div class="line"></div><div class="line">        id = novel[<span class="string">'id'</span>]</div><div class="line">        title = novel[<span class="string">'title'</span>]</div><div class="line">        url = novel[<span class="string">'url'</span>]</div><div class="line">        intro = novel[<span class="string">'intro'</span>]</div><div class="line">        author = novel[<span class="string">'author'</span>]</div><div class="line">        tag = novel[<span class="string">'tag'</span>]</div><div class="line">        cover = novel[<span class="string">'cover'</span>]</div><div class="line">        <span class="comment">#查看记录是否存在</span></div><div class="line">        sql = <span class="string">"select * from novel where id = '%s' "</span> % id</div><div class="line">        count = cur.execute(sql)</div><div class="line">        <span class="comment">#print 'count:%d' % count</span></div><div class="line">        <span class="keyword">if</span> count == 0:</div><div class="line">            status = <span class="string">'0'</span> <span class="comment">#未完成</span></div><div class="line">            dt=datetime.datetime.now().strftime(<span class="string">"%Y-%m-%d %H:%M:%S"</span>)</div><div class="line">            sql = <span class="string">''</span><span class="string">'insert into novel(id,title,url,intro,author,tag,cover,status,dt)</span></div><div class="line"><span class="string">                    values('</span>%s<span class="string">', '</span>%s<span class="string">', '</span>%s<span class="string">', '</span>%s<span class="string">', '</span>%s<span class="string">', '</span>%s<span class="string">', '</span>%s<span class="string">', '</span>%s<span class="string">', '</span>%s<span class="string">')</span></div><div class="line"><span class="string">                 '</span><span class="string">''</span> \</div><div class="line">                % (id,title,url,intro,author,tag,cover,status,dt)</div><div class="line"></div><div class="line">            <span class="comment">#插入数据</span></div><div class="line">            <span class="comment">#print sql</span></div><div class="line">            cur.execute(sql)</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            <span class="built_in">print</span> u<span class="string">'id=%s 该记录已存在'</span> % (id)</div><div class="line"></div><div class="line">    <span class="comment">#异常处理</span></div><div class="line">    except MySQLdb.Error,e:  </div><div class="line">        <span class="built_in">print</span> <span class="string">"Mysql Error %d: %s"</span> % (e.args[0], e.args[1]) </div><div class="line">    finally:</div><div class="line">        cur.close()</div><div class="line">        conn.commit()</div><div class="line">        conn.close()</div><div class="line"></div><div class="line">def updateNovel(id, status):</div><div class="line">    try:  </div><div class="line">        conn=MySQLdb.connect(host=host,user=user,passwd=password,port=port, db=database, charset=charset)</div><div class="line">        cur=conn.cursor()</div><div class="line"></div><div class="line">        sql = <span class="string">''</span><span class="string">'update novel set status = '</span>%s<span class="string">' where id = '</span>%s<span class="string">'</span></div><div class="line"><span class="string">                '</span><span class="string">''</span> \</div><div class="line">                % (status, id)</div><div class="line"></div><div class="line">        <span class="comment">#print sql</span></div><div class="line">        cur.execute(sql)</div><div class="line"></div><div class="line"></div><div class="line">    <span class="comment">#异常处理</span></div><div class="line">    except MySQLdb.Error,e:  </div><div class="line">        <span class="built_in">print</span> <span class="string">"Mysql Error %d: %s"</span> % (e.args[0], e.args[1]) </div><div class="line">    finally:</div><div class="line">        cur.close()</div><div class="line">        conn.commit()</div><div class="line">        conn.close()</div><div class="line"></div><div class="line">def isFinish(id):</div><div class="line">    try:  </div><div class="line">        conn=MySQLdb.connect(host=host,user=user,passwd=password,port=port, db=database, charset=charset)</div><div class="line">        cur=conn.cursor()</div><div class="line"></div><div class="line">        sql = <span class="string">"select * from novel where id = '%s' and status = '1' "</span> % id</div><div class="line">        count = cur.execute(sql)</div><div class="line">        <span class="comment">#print 'count:%d' % count</span></div><div class="line"></div><div class="line">        <span class="built_in">return</span> True <span class="keyword">if</span> count&gt;0 <span class="keyword">else</span> False</div><div class="line"></div><div class="line">    <span class="comment">#异常处理</span></div><div class="line">    except MySQLdb.Error,e:  </div><div class="line">        <span class="built_in">print</span> <span class="string">"Mysql Error %d: %s"</span> % (e.args[0], e.args[1])</div><div class="line">        <span class="built_in">return</span> False;</div><div class="line">    </div><div class="line">    finally:</div><div class="line">        cur.close()</div><div class="line">        conn.commit()</div><div class="line">        conn.close()</div><div class="line"></div><div class="line">def insertSection(section):</div><div class="line">    try:</div><div class="line">        conn=MySQLdb.connect(host=host,user=user,passwd=password,port=port, db=database, charset=charset)</div><div class="line">        cur=conn.cursor()</div><div class="line"></div><div class="line">        id = section[<span class="string">'id'</span>]</div><div class="line">        section_id = section[<span class="string">'section_id'</span>]</div><div class="line">        section_title = section[<span class="string">'section_title'</span>]</div><div class="line">        section_url = section[<span class="string">'section_url'</span>]</div><div class="line">        <span class="comment">#section_content = section['section_content']</span></div><div class="line"></div><div class="line">        <span class="comment">#查看记录是否存在</span></div><div class="line">        sql = <span class="string">"select * from section where id = '%s' and section_id = '%s' "</span> % (id, section_id)</div><div class="line">        count = cur.execute(sql)</div><div class="line">        <span class="comment">#print 'count:%d' % count</span></div><div class="line">        <span class="keyword">if</span> count == 0:</div><div class="line">            section_content = getContent(section_url)</div><div class="line">            <span class="comment">#print section_content</span></div><div class="line">            dt=datetime.datetime.now().strftime(<span class="string">"%Y-%m-%d %H:%M:%S"</span>)</div><div class="line">            sql = <span class="string">''</span><span class="string">'insert into section(id,section_id,section_title,section_url,section_content,dt)</span></div><div class="line"><span class="string">                    values('</span>%s<span class="string">', '</span>%s<span class="string">', '</span>%s<span class="string">', '</span>%s<span class="string">', '</span>%s<span class="string">', '</span>%s<span class="string">')</span></div><div class="line"><span class="string">                 '</span><span class="string">''</span> \</div><div class="line">                % (id,section_id,section_title,section_url,section_content,dt)</div><div class="line"></div><div class="line">            <span class="comment">#插入数据</span></div><div class="line">            <span class="comment">#print sql</span></div><div class="line">            cur.execute(sql)</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            <span class="built_in">print</span> u<span class="string">'id=%s,section_id=%s 该记录已存在'</span> % (id,section_id)</div><div class="line"></div><div class="line">    <span class="comment">#异常处理</span></div><div class="line">    except MySQLdb.Error,e:  </div><div class="line">        <span class="built_in">print</span> <span class="string">"Mysql Error %d: %s"</span> % (e.args[0], e.args[1]) </div><div class="line">    finally:</div><div class="line">        cur.close()</div><div class="line">        conn.commit()</div><div class="line">        conn.close()</div><div class="line"></div><div class="line">def getBetween(str, str1, str2):</div><div class="line">    strOutput = <span class="string">''</span></div><div class="line">    <span class="keyword">if</span> str2 == <span class="string">''</span>:</div><div class="line">        strOutput = str[str.find(str1)+len(str1):]</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        strOutput = str[str.find(str1)+len(str1):str.find(str2)]</div><div class="line">    <span class="built_in">return</span> strOutput</div><div class="line"></div><div class="line">def isNone(v):</div><div class="line">    <span class="keyword">if</span> not v:</div><div class="line">        <span class="built_in">return</span> <span class="string">''</span></div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="built_in">return</span> v</div><div class="line"></div><div class="line">def c(txt):</div><div class="line">    txt = isNone(txt)</div><div class="line">    <span class="keyword">if</span> txt == <span class="string">''</span>:</div><div class="line">        <span class="built_in">return</span> <span class="string">''</span></div><div class="line"></div><div class="line">    s = <span class="string">""</span><span class="string">"</span></div><div class="line"><span class="string">        &lt;span style='color:#4876FF'&gt;--啃---书--网-小--说---这是华丽的分割线--&lt;/span&gt;&lt;br /&gt;</span></div><div class="line"><span class="string">        &lt;a href='/xiaoshuo/31109/'&gt;师娘，别玩火啃书网&lt;/a&gt;</span></div><div class="line"><span class="string">        小说网友请提示:长时间阅读请注意眼睛的休息。啃书网推荐阅读：</span></div><div class="line"><span class="string">        &lt;a href='/xiaoshuo/42289/'&gt;三国之将星系统&lt;/a&gt;</span></div><div class="line"><span class="string">        &lt;script type="</span>text/rocketscript<span class="string">"&gt;readad1();&lt;/script&gt;&lt;br /&gt;</span></div><div class="line"><span class="string">        &lt;span style='color:#4876FF'&gt;-啃--书-小--说--网---这是华丽的分割线---&lt;/span&gt;</span></div><div class="line"><span class="string">        </span></div><div class="line"><span class="string">        "</span><span class="string">""</span></div><div class="line"></div><div class="line">    <span class="comment">#替换href</span></div><div class="line">    urls = re.findall(r<span class="string">"&lt;a.*?href=.*?&lt;\/a&gt;"</span>, txt, re.I|re.S|re.M)  </div><div class="line">    <span class="keyword">for</span> url <span class="keyword">in</span> urls:  </div><div class="line">        <span class="comment">#print url</span></div><div class="line">        txt = txt.replace(url, <span class="string">''</span>)</div><div class="line"></div><div class="line">    <span class="comment">#替换span</span></div><div class="line">    spans = re.findall(r<span class="string">"&lt;span.*?style=.*?&lt;\/span&gt;"</span>, txt, re.I|re.S|re.M)  </div><div class="line">    <span class="keyword">for</span> span <span class="keyword">in</span> spans:  </div><div class="line">        <span class="comment">#print span</span></div><div class="line">        txt = txt.replace(span, <span class="string">''</span>)</div><div class="line"></div><div class="line">    <span class="comment">#替换script</span></div><div class="line">    scripts = re.findall(r<span class="string">"&lt;script.*?&lt;\/script&gt;"</span>, txt, re.I|re.S|re.M)</div><div class="line">    <span class="keyword">for</span> script <span class="keyword">in</span> scripts:  </div><div class="line">        <span class="comment">#print script</span></div><div class="line">        txt = txt.replace(script, <span class="string">''</span>)</div><div class="line"></div><div class="line">    txt = txt.replace(<span class="string">'&amp;nbsp;'</span>,<span class="string">' '</span>)</div><div class="line">    txt = txt.replace(<span class="string">'&amp;#13;'</span>, <span class="string">''</span>)</div><div class="line">    txt = txt.replace(<span class="string">'&lt;br/&gt;'</span>, <span class="string">'\n'</span>)</div><div class="line">    txt = txt.replace(<span class="string">'\n\n'</span>, <span class="string">'\n'</span>)</div><div class="line"></div><div class="line">    tip = u<span class="string">"小说网友请提示:长时间阅读请注意眼睛的休息。啃书网推荐阅读："</span></div><div class="line">    txt = txt.replace(tip,<span class="string">''</span>)</div><div class="line">    <span class="built_in">return</span> txt</div><div class="line"></div><div class="line"><span class="comment">#获取小说目录列表</span></div><div class="line">def getNovelList(site_url):</div><div class="line">    urls = []</div><div class="line">    <span class="keyword">if</span> site_url == <span class="string">''</span>:</div><div class="line">        site_url = novel_url + <span class="string">'/modules/article/search.php'</span></div><div class="line">    try:</div><div class="line">        r=requests.get(site_url,headers=headers, verify=False)</div><div class="line">        d = pq(r.content)</div><div class="line">        <span class="comment">#d = pq(url=url,encoding="utf8")</span></div><div class="line">        <span class="comment">#获取list</span></div><div class="line">        ul = d(<span class="string">'ul[class="list_1"]'</span>)</div><div class="line">        <span class="comment">#print ul</span></div><div class="line">        lis = ul(<span class="string">'li'</span>)</div><div class="line">        <span class="keyword">for</span> li <span class="keyword">in</span> lis.items():</div><div class="line">            url = li(<span class="string">'a'</span>).attr(<span class="string">'href'</span>)</div><div class="line">            id = url.replace(<span class="string">'xiaoshuo'</span>,<span class="string">''</span>)</div><div class="line">            id = id.replace(<span class="string">'/'</span>,<span class="string">''</span>)</div><div class="line">            <span class="keyword">if</span> id == <span class="string">''</span>:</div><div class="line">                <span class="built_in">continue</span>;</div><div class="line">            url = novel_url + url</div><div class="line">            title = li(<span class="string">'h4[class="book-title"]'</span>).html()</div><div class="line">            intro = li(<span class="string">'p[class="book-desc"]'</span>).html()</div><div class="line">            author = li(<span class="string">'span[class="book-author"]'</span>).html()</div><div class="line">            author =  getBetween(author,r<span class="string">'&lt;i class="icon iconfont icon-ren"&gt;'</span>, <span class="string">''</span>)</div><div class="line">            author = author.replace(<span class="string">'/'</span>, <span class="string">''</span>).replace(<span class="string">"&gt;"</span>,<span class="string">''</span>)</div><div class="line">            tag = li(<span class="string">'em[class="tag-small yellow"]'</span>).html()</div><div class="line">            tag = tag.replace(<span class="string">'['</span>,<span class="string">''</span>).replace(<span class="string">']'</span>,<span class="string">''</span>)</div><div class="line">            cover = li(<span class="string">'img'</span>).attr(<span class="string">'src'</span>)</div><div class="line">            <span class="comment">#intro = intro.encode("utf-8", "ignore")</span></div><div class="line">            <span class="comment">#print id,url,title,intro,author,tag,cover</span></div><div class="line">            novel = &#123;</div><div class="line">                <span class="string">'id'</span>: id,</div><div class="line">                <span class="string">'title'</span>: title,</div><div class="line">                <span class="string">'url'</span>: url,</div><div class="line">                <span class="string">'intro'</span>: intro,</div><div class="line">                <span class="string">'author'</span>: author,</div><div class="line">                <span class="string">'tag'</span>: tag,</div><div class="line">                <span class="string">'cover'</span>: cover</div><div class="line">            &#125;</div><div class="line">            urls.append(novel)</div><div class="line"></div><div class="line">        <span class="built_in">print</span> u<span class="string">'读取小说列表完成...'</span></div><div class="line">        <span class="built_in">return</span> urls</div><div class="line"></div><div class="line">    except Exception,e:</div><div class="line">        <span class="built_in">print</span> str(e)</div><div class="line">        <span class="built_in">print</span> u<span class="string">'读取小说列表出错...'</span></div><div class="line">        <span class="built_in">return</span> False</div><div class="line"></div><div class="line"><span class="comment">#写入章节列表内容</span></div><div class="line">def insertSectionList(id):</div><div class="line">    urls = []</div><div class="line">    try:</div><div class="line">        <span class="keyword">if</span> isFinish(id):</div><div class="line">            <span class="built_in">print</span> u<span class="string">'id=%s,is already Finished.'</span> % id</div><div class="line">            <span class="built_in">return</span> True</div><div class="line">        </div><div class="line">        url = novel_url + <span class="string">"/xiaoshuo/"</span> + id + <span class="string">"/0/"</span></div><div class="line">        r=requests.get(url,headers=headers, verify=False)</div><div class="line">        d = pq(r.content)</div><div class="line">        <span class="comment">#d = pq(url=url,encoding="utf8")</span></div><div class="line">        <span class="comment">#print d</span></div><div class="line">        category = d(<span class="string">'meta[property="og:novel:category"]'</span>).attr(<span class="string">'content'</span>)</div><div class="line">        author = d(<span class="string">'meta[property="og:novel:author"]'</span>).attr(<span class="string">'content'</span>)</div><div class="line">        book_name = d(<span class="string">'meta[property="og:novel:book_name"]'</span>).attr(<span class="string">'content'</span>)</div><div class="line">        read_url = d(<span class="string">'meta[property="og:novel:read_url"]'</span>).attr(<span class="string">'content'</span>)</div><div class="line">        status = d(<span class="string">'meta[property="og:novel:status"]'</span>).attr(<span class="string">'content'</span>)</div><div class="line">        <span class="comment">#title = title.encode("gbk", "ignore")</span></div><div class="line">        <span class="comment">#print category,author,book_name,read_url,status</span></div><div class="line">        ul = d(<span class="string">'ul[class="mulu_list"]'</span>)</div><div class="line">        <span class="comment">#print ul</span></div><div class="line">        lis = ul(<span class="string">'li'</span>)</div><div class="line">        <span class="keyword">for</span> li <span class="keyword">in</span> lis.items():</div><div class="line">            section_url = li(<span class="string">'a'</span>).attr(<span class="string">'href'</span>)</div><div class="line">            section_id = section_url.replace(<span class="string">"/xiaoshuo/"</span> + id + <span class="string">"/"</span>, <span class="string">''</span>).replace(<span class="string">"/"</span>, <span class="string">''</span>)</div><div class="line">            <span class="keyword">if</span> section_id == <span class="string">''</span>:</div><div class="line">                <span class="built_in">continue</span>;</div><div class="line">            section_url = novel_url + section_url</div><div class="line">            section_title = li(<span class="string">'a'</span>).html()</div><div class="line">            <span class="built_in">print</span> section_id,section_url,section_title</div><div class="line">            <span class="comment">#section_content = getContent(section_url)</span></div><div class="line">            <span class="comment">#print section_content</span></div><div class="line">            section = &#123;</div><div class="line">                <span class="string">'id'</span>: id,</div><div class="line">                <span class="string">'section_id'</span>: section_id,</div><div class="line">                <span class="string">'section_title'</span>: section_title,</div><div class="line">                <span class="string">'section_url'</span>: section_url,</div><div class="line">                <span class="string">'section_content'</span>: <span class="string">''</span></div><div class="line">            &#125;</div><div class="line">            <span class="comment">#urls.append(section)</span></div><div class="line">            insertSection(section)</div><div class="line"></div><div class="line">        <span class="comment">#更新状态为已完成</span></div><div class="line">        updateNovel(id, <span class="string">'1'</span>)</div><div class="line">        <span class="built_in">print</span> u<span class="string">'id=%s,章节内容写入完成...'</span> % id</div><div class="line">        <span class="comment">#return urls</span></div><div class="line">        <span class="built_in">return</span> True</div><div class="line"></div><div class="line">    except Exception,e:</div><div class="line">        <span class="built_in">print</span> str(e)</div><div class="line">        <span class="built_in">print</span> u<span class="string">'id=%s,章节内容写入出错...'</span> % id</div><div class="line">        <span class="built_in">return</span> False</div><div class="line"></div><div class="line"><span class="comment">#获取指定链接文章内容</span></div><div class="line">def getContent(url):</div><div class="line">    try:</div><div class="line">        <span class="comment">#print url</span></div><div class="line">        r=requests.get(url,headers=headers)</div><div class="line">        d = pq(r.content)</div><div class="line">        <span class="comment">#d = pq(url=url,encoding="utf8")</span></div><div class="line">        <span class="comment">#print d</span></div><div class="line">        <span class="comment">#title = d('h1[class="article-title"]').html()</span></div><div class="line">        <span class="comment">#print title</span></div><div class="line">        <span class="comment">#title = isNone(title)</span></div><div class="line">        <span class="comment">#if title == '':</span></div><div class="line">        <span class="comment">#    print u'读取文章出错，重试中...'</span></div><div class="line">        <span class="comment">#    return False</span></div><div class="line"></div><div class="line">        <span class="comment">#result = d('div[class="article-con"]').html()</span></div><div class="line">        result = d(<span class="string">'p[id="chapcont"]'</span>).html()</div><div class="line">        <span class="comment">#print result</span></div><div class="line">        result = c(result)</div><div class="line">        <span class="comment">#print result</span></div><div class="line">        <span class="comment">#result = result.encode("gbk", "ignore")</span></div><div class="line">        <span class="comment">#time.sleep(2)</span></div><div class="line">        <span class="built_in">return</span> result</div><div class="line">        </div><div class="line">    except Exception,e:</div><div class="line">        <span class="built_in">print</span> str(e)</div><div class="line">        <span class="built_in">print</span> u<span class="string">'读取文章出错，重试中...'</span></div><div class="line">        <span class="built_in">return</span> <span class="string">""</span></div><div class="line"></div><div class="line">def parseNovelList(urls):</div><div class="line">    <span class="keyword">if</span> urls:</div><div class="line">        <span class="keyword">for</span> url <span class="keyword">in</span> urls:</div><div class="line">            <span class="comment">#写入小说列表</span></div><div class="line">            insertNovel(url)</div><div class="line">            id = url[<span class="string">'id'</span>]</div><div class="line">            <span class="comment">#写入小说章节内容</span></div><div class="line">            insertSectionList(id)</div><div class="line"></div><div class="line">def reduce(lists):</div><div class="line">    novelList = []</div><div class="line">    <span class="keyword">if</span> lists:</div><div class="line">        <span class="keyword">for</span> novel <span class="keyword">in</span> lists:</div><div class="line">            <span class="keyword">if</span> novel not <span class="keyword">in</span> novelList:</div><div class="line">                novelList.append(novel)</div><div class="line">    <span class="built_in">return</span> novelList</div><div class="line"></div><div class="line"><span class="comment">#deal('test.txt')</span></div><div class="line">url = raw_input(<span class="string">'plz input book url:'</span>)</div><div class="line"><span class="keyword">if</span> url == <span class="string">''</span>:</div><div class="line">    <span class="comment">#url = "https://m.kenshu.cc/zt/fenlei/paihang.html"</span></div><div class="line">    url = <span class="string">"https://m.kenshu.cc/modules/article/search.php"</span></div><div class="line"></div><div class="line">novelList = reduce(getNovelList(url))</div><div class="line">parseNovelList(novelList)</div></pre></td></tr></table></figure>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/31/tongcheng-user/" class="archive-article-date">
-  	<time datetime="2017-12-31T04:24:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/31/tongcheng-user/">Use Python Download Tongcheng User Info</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2018/06/10/xsdowns-db/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/27/download-xiaoshuo/" class="archive-article-date">
-  	<time datetime="2017-12-27T08:12:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-27</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/02/26/sina-blog - v2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Sina Blog &amp;&amp; Comment Spilder 第二版</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/27/download-xiaoshuo/">Use Python Download Xiao Shuo</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/11/stormzhang-yunying/" class="archive-article-date">
-  	<time datetime="2017-12-11T03:10:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/11/stormzhang-yunying/">从我公号发展史来谈谈产品、运营 - stormzhang</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/11/stormzhang-chuangye/" class="archive-article-date">
-  	<time datetime="2017-12-11T02:50:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/11/stormzhang-chuangye/">我的一次创业投资史 - stormzhang</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/11/stormzhang-renzhi/" class="archive-article-date">
-  	<time datetime="2017-12-11T02:31:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/11/stormzhang-renzhi/">认知与知识 - stormzhang</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -471,8 +332,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
