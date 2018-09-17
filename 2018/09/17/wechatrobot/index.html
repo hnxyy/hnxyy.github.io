@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hnxyy&#39;s Blog</title>
+  <title>wechat robot using wxpy python library | Hnxyy&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hnxyy&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="前言使用python wxpy库 实现 微信自动聊天机器人。 使用方法： 使用前先安装 wxpy 库， pip install wxpypip install pillow 扫码登录 附python源码">
+<meta property="og:type" content="article">
+<meta property="og:title" content="wechat robot using wxpy python library">
+<meta property="og:url" content="http://yoursite.com/2018/09/17/wechatrobot/index.html">
 <meta property="og:site_name" content="Hnxyy&#39;s Blog">
+<meta property="og:description" content="前言使用python wxpy库 实现 微信自动聊天机器人。 使用方法： 使用前先安装 wxpy 库， pip install wxpypip install pillow 扫码登录 附python源码">
+<meta property="og:updated_time" content="2018-09-17T06:36:54.193Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hnxyy&#39;s Blog">
+<meta name="twitter:title" content="wechat robot using wxpy python library">
+<meta name="twitter:description" content="前言使用python wxpy库 实现 微信自动聊天机器人。 使用方法： 使用前先安装 wxpy 库， pip install wxpypip install pillow 扫码登录 附python源码">
   
     <link rel="alternative" href="/atom.xml" title="Hnxyy&#39;s Blog" type="application/atom+xml">
   
@@ -149,16 +153,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-wechatrobot" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-wechatrobot" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/17/wechatrobot/">wechat robot using wxpy python library</a>
+    <h1 class="article-title" itemprop="name">
+      wechat robot using wxpy python library
     </h1>
   
 
@@ -177,11 +179,31 @@
 <p>pip install wxpy<br>pip install pillow</p>
 <p>扫码登录</p>
 <p>附python源码</p>
-        
-          <a class="article-more-a" href="/2018/09/17/wechatrobot/#more">more >></a>
-        
+<a id="more"></a>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div><div class="line">217</div><div class="line">218</div><div class="line">219</div><div class="line">220</div><div class="line">221</div><div class="line">222</div><div class="line">223</div><div class="line">224</div><div class="line">225</div><div class="line">226</div><div class="line">227</div><div class="line">228</div><div class="line">229</div><div class="line">230</div><div class="line">231</div><div class="line">232</div><div class="line">233</div><div class="line">234</div><div class="line">235</div><div class="line">236</div><div class="line">237</div><div class="line">238</div><div class="line">239</div><div class="line">240</div><div class="line">241</div><div class="line">242</div><div class="line">243</div><div class="line">244</div><div class="line">245</div><div class="line">246</div><div class="line">247</div><div class="line">248</div><div class="line">249</div><div class="line">250</div><div class="line">251</div><div class="line">252</div><div class="line">253</div><div class="line">254</div><div class="line">255</div><div class="line">256</div><div class="line">257</div><div class="line">258</div><div class="line">259</div><div class="line">260</div><div class="line">261</div><div class="line">262</div><div class="line">263</div><div class="line">264</div><div class="line">265</div><div class="line">266</div><div class="line">267</div><div class="line">268</div><div class="line">269</div><div class="line">270</div><div class="line">271</div><div class="line">272</div><div class="line">273</div><div class="line">274</div><div class="line">275</div><div class="line">276</div><div class="line">277</div><div class="line">278</div><div class="line">279</div><div class="line">280</div><div class="line">281</div><div class="line">282</div><div class="line">283</div><div class="line">284</div><div class="line">285</div><div class="line">286</div><div class="line">287</div><div class="line">288</div><div class="line">289</div><div class="line">290</div><div class="line">291</div><div class="line">292</div><div class="line">293</div><div class="line">294</div><div class="line">295</div><div class="line">296</div><div class="line">297</div><div class="line">298</div><div class="line">299</div><div class="line">300</div><div class="line">301</div><div class="line">302</div><div class="line">303</div><div class="line">304</div><div class="line">305</div><div class="line">306</div><div class="line">307</div><div class="line">308</div><div class="line">309</div><div class="line">310</div><div class="line">311</div><div class="line">312</div><div class="line">313</div><div class="line">314</div><div class="line">315</div><div class="line">316</div><div class="line">317</div><div class="line">318</div><div class="line">319</div><div class="line">320</div><div class="line">321</div><div class="line">322</div><div class="line">323</div><div class="line">324</div><div class="line">325</div><div class="line">326</div><div class="line">327</div><div class="line">328</div><div class="line">329</div><div class="line">330</div><div class="line">331</div><div class="line">332</div><div class="line">333</div><div class="line">334</div><div class="line">335</div><div class="line">336</div><div class="line">337</div><div class="line">338</div><div class="line">339</div><div class="line">340</div><div class="line">341</div><div class="line">342</div><div class="line">343</div><div class="line">344</div><div class="line">345</div><div class="line">346</div><div class="line">347</div><div class="line">348</div><div class="line">349</div><div class="line">350</div><div class="line">351</div><div class="line">352</div><div class="line">353</div><div class="line">354</div><div class="line">355</div><div class="line">356</div><div class="line">357</div><div class="line">358</div><div class="line">359</div><div class="line">360</div><div class="line">361</div><div class="line">362</div><div class="line">363</div><div class="line">364</div><div class="line">365</div><div class="line">366</div><div class="line">367</div><div class="line">368</div><div class="line">369</div><div class="line">370</div><div class="line">371</div><div class="line">372</div><div class="line">373</div><div class="line">374</div><div class="line">375</div><div class="line">376</div><div class="line">377</div><div class="line">378</div><div class="line">379</div><div class="line">380</div><div class="line">381</div><div class="line">382</div><div class="line">383</div><div class="line">384</div><div class="line">385</div><div class="line">386</div><div class="line">387</div><div class="line">388</div><div class="line">389</div><div class="line">390</div><div class="line">391</div><div class="line">392</div><div class="line">393</div><div class="line">394</div><div class="line">395</div><div class="line">396</div><div class="line">397</div><div class="line">398</div><div class="line">399</div><div class="line">400</div><div class="line">401</div><div class="line">402</div><div class="line">403</div><div class="line">404</div><div class="line">405</div><div class="line">406</div><div class="line">407</div><div class="line">408</div><div class="line">409</div><div class="line">410</div><div class="line">411</div><div class="line">412</div><div class="line">413</div><div class="line">414</div><div class="line">415</div><div class="line">416</div><div class="line">417</div><div class="line">418</div><div class="line">419</div><div class="line">420</div><div class="line">421</div><div class="line">422</div><div class="line">423</div><div class="line">424</div><div class="line">425</div><div class="line">426</div><div class="line">427</div><div class="line">428</div><div class="line">429</div><div class="line">430</div><div class="line">431</div><div class="line">432</div><div class="line">433</div><div class="line">434</div><div class="line">435</div><div class="line">436</div><div class="line">437</div><div class="line">438</div><div class="line">439</div><div class="line">440</div><div class="line">441</div><div class="line">442</div><div class="line">443</div><div class="line">444</div><div class="line">445</div><div class="line">446</div><div class="line">447</div><div class="line">448</div><div class="line">449</div><div class="line">450</div><div class="line">451</div><div class="line">452</div><div class="line">453</div><div class="line">454</div><div class="line">455</div><div class="line">456</div><div class="line">457</div><div class="line">458</div><div class="line">459</div><div class="line">460</div><div class="line">461</div><div class="line">462</div><div class="line">463</div><div class="line">464</div><div class="line">465</div><div class="line">466</div><div class="line">467</div><div class="line">468</div><div class="line">469</div><div class="line">470</div><div class="line">471</div><div class="line">472</div><div class="line">473</div><div class="line">474</div><div class="line">475</div><div class="line">476</div><div class="line">477</div><div class="line">478</div><div class="line">479</div><div class="line">480</div><div class="line">481</div><div class="line">482</div><div class="line">483</div><div class="line">484</div><div class="line">485</div><div class="line">486</div><div class="line">487</div><div class="line">488</div><div class="line">489</div><div class="line">490</div><div class="line">491</div><div class="line">492</div><div class="line">493</div><div class="line">494</div><div class="line">495</div><div class="line">496</div><div class="line">497</div><div class="line">498</div><div class="line">499</div><div class="line">500</div><div class="line">501</div><div class="line">502</div><div class="line">503</div><div class="line">504</div><div class="line">505</div><div class="line">506</div><div class="line">507</div><div class="line">508</div><div class="line">509</div><div class="line">510</div><div class="line">511</div><div class="line">512</div><div class="line">513</div><div class="line">514</div><div class="line">515</div><div class="line">516</div><div class="line">517</div><div class="line">518</div><div class="line">519</div><div class="line">520</div><div class="line">521</div><div class="line">522</div><div class="line">523</div><div class="line">524</div><div class="line">525</div><div class="line">526</div><div class="line">527</div><div class="line">528</div><div class="line">529</div><div class="line">530</div><div class="line">531</div><div class="line">532</div><div class="line">533</div><div class="line">534</div><div class="line">535</div><div class="line">536</div><div class="line">537</div><div class="line">538</div><div class="line">539</div><div class="line">540</div><div class="line">541</div><div class="line">542</div><div class="line">543</div><div class="line">544</div><div class="line">545</div><div class="line">546</div><div class="line">547</div><div class="line">548</div><div class="line">549</div><div class="line">550</div><div class="line">551</div><div class="line">552</div><div class="line">553</div><div class="line">554</div><div class="line">555</div><div class="line">556</div><div class="line">557</div><div class="line">558</div><div class="line">559</div><div class="line">560</div><div class="line">561</div><div class="line">562</div><div class="line">563</div><div class="line">564</div><div class="line">565</div><div class="line">566</div><div class="line">567</div><div class="line">568</div><div class="line">569</div><div class="line">570</div><div class="line">571</div><div class="line">572</div><div class="line">573</div><div class="line">574</div><div class="line">575</div><div class="line">576</div><div class="line">577</div><div class="line">578</div><div class="line">579</div><div class="line">580</div><div class="line">581</div><div class="line">582</div><div class="line">583</div><div class="line">584</div><div class="line">585</div><div class="line">586</div><div class="line">587</div><div class="line">588</div><div class="line">589</div><div class="line">590</div><div class="line">591</div><div class="line">592</div><div class="line">593</div><div class="line">594</div><div class="line">595</div><div class="line">596</div><div class="line">597</div><div class="line">598</div><div class="line">599</div><div class="line">600</div><div class="line">601</div><div class="line">602</div><div class="line">603</div><div class="line">604</div><div class="line">605</div><div class="line">606</div><div class="line">607</div><div class="line">608</div><div class="line">609</div><div class="line">610</div><div class="line">611</div><div class="line">612</div><div class="line">613</div><div class="line">614</div><div class="line">615</div><div class="line">616</div><div class="line">617</div><div class="line">618</div><div class="line">619</div><div class="line">620</div><div class="line">621</div><div class="line">622</div><div class="line">623</div><div class="line">624</div><div class="line">625</div><div class="line">626</div><div class="line">627</div><div class="line">628</div><div class="line">629</div><div class="line">630</div><div class="line">631</div><div class="line">632</div><div class="line">633</div><div class="line">634</div><div class="line">635</div><div class="line">636</div><div class="line">637</div><div class="line">638</div><div class="line">639</div><div class="line">640</div><div class="line">641</div><div class="line">642</div><div class="line">643</div><div class="line">644</div><div class="line">645</div><div class="line">646</div><div class="line">647</div><div class="line">648</div><div class="line">649</div><div class="line">650</div><div class="line">651</div><div class="line">652</div><div class="line">653</div><div class="line">654</div><div class="line">655</div><div class="line">656</div><div class="line">657</div><div class="line">658</div><div class="line">659</div><div class="line">660</div><div class="line">661</div><div class="line">662</div><div class="line">663</div><div class="line">664</div><div class="line">665</div><div class="line">666</div><div class="line">667</div><div class="line">668</div><div class="line">669</div><div class="line">670</div><div class="line">671</div><div class="line">672</div><div class="line">673</div><div class="line">674</div><div class="line">675</div><div class="line">676</div><div class="line">677</div><div class="line">678</div><div class="line">679</div><div class="line">680</div><div class="line">681</div><div class="line">682</div><div class="line">683</div><div class="line">684</div><div class="line">685</div><div class="line">686</div><div class="line">687</div><div class="line">688</div><div class="line">689</div><div class="line">690</div><div class="line">691</div><div class="line">692</div><div class="line">693</div><div class="line">694</div><div class="line">695</div><div class="line">696</div><div class="line">697</div><div class="line">698</div><div class="line">699</div><div class="line">700</div><div class="line">701</div><div class="line">702</div><div class="line">703</div><div class="line">704</div><div class="line">705</div><div class="line">706</div><div class="line">707</div><div class="line">708</div><div class="line">709</div><div class="line">710</div><div class="line">711</div><div class="line">712</div><div class="line">713</div><div class="line">714</div><div class="line">715</div><div class="line">716</div><div class="line">717</div><div class="line">718</div><div class="line">719</div><div class="line">720</div><div class="line">721</div><div class="line">722</div><div class="line">723</div><div class="line">724</div><div class="line">725</div><div class="line">726</div><div class="line">727</div><div class="line">728</div><div class="line">729</div><div class="line">730</div><div class="line">731</div><div class="line">732</div><div class="line">733</div><div class="line">734</div><div class="line">735</div><div class="line">736</div><div class="line">737</div><div class="line">738</div><div class="line">739</div><div class="line">740</div><div class="line">741</div><div class="line">742</div><div class="line">743</div><div class="line">744</div><div class="line">745</div><div class="line">746</div><div class="line">747</div><div class="line">748</div><div class="line">749</div><div class="line">750</div><div class="line">751</div><div class="line">752</div><div class="line">753</div><div class="line">754</div><div class="line">755</div><div class="line">756</div><div class="line">757</div><div class="line">758</div><div class="line">759</div><div class="line">760</div><div class="line">761</div><div class="line">762</div><div class="line">763</div><div class="line">764</div><div class="line">765</div><div class="line">766</div><div class="line">767</div><div class="line">768</div><div class="line">769</div><div class="line">770</div><div class="line">771</div><div class="line">772</div><div class="line">773</div><div class="line">774</div><div class="line">775</div><div class="line">776</div><div class="line">777</div><div class="line">778</div><div class="line">779</div><div class="line">780</div><div class="line">781</div><div class="line">782</div><div class="line">783</div><div class="line">784</div><div class="line">785</div><div class="line">786</div><div class="line">787</div><div class="line">788</div><div class="line">789</div><div class="line">790</div><div class="line">791</div><div class="line">792</div><div class="line">793</div><div class="line">794</div><div class="line">795</div><div class="line">796</div><div class="line">797</div><div class="line">798</div><div class="line">799</div><div class="line">800</div><div class="line">801</div><div class="line">802</div><div class="line">803</div><div class="line">804</div><div class="line">805</div><div class="line">806</div><div class="line">807</div><div class="line">808</div><div class="line">809</div><div class="line">810</div><div class="line">811</div><div class="line">812</div><div class="line">813</div><div class="line">814</div><div class="line">815</div><div class="line">816</div><div class="line">817</div><div class="line">818</div><div class="line">819</div><div class="line">820</div><div class="line">821</div><div class="line">822</div><div class="line">823</div><div class="line">824</div><div class="line">825</div><div class="line">826</div><div class="line">827</div><div class="line">828</div><div class="line">829</div><div class="line">830</div><div class="line">831</div><div class="line">832</div><div class="line">833</div><div class="line">834</div><div class="line">835</div><div class="line">836</div><div class="line">837</div><div class="line">838</div><div class="line">839</div><div class="line">840</div><div class="line">841</div><div class="line">842</div><div class="line">843</div><div class="line">844</div><div class="line">845</div><div class="line">846</div><div class="line">847</div><div class="line">848</div><div class="line">849</div><div class="line">850</div><div class="line">851</div><div class="line">852</div><div class="line">853</div><div class="line">854</div><div class="line">855</div><div class="line">856</div><div class="line">857</div><div class="line">858</div><div class="line">859</div><div class="line">860</div><div class="line">861</div><div class="line">862</div><div class="line">863</div><div class="line">864</div><div class="line">865</div><div class="line">866</div><div class="line">867</div><div class="line">868</div><div class="line">869</div><div class="line">870</div><div class="line">871</div><div class="line">872</div><div class="line">873</div><div class="line">874</div><div class="line">875</div><div class="line">876</div><div class="line">877</div><div class="line">878</div><div class="line">879</div><div class="line">880</div><div class="line">881</div><div class="line">882</div><div class="line">883</div><div class="line">884</div><div class="line">885</div><div class="line">886</div><div class="line">887</div><div class="line">888</div><div class="line">889</div><div class="line">890</div><div class="line">891</div><div class="line">892</div><div class="line">893</div><div class="line">894</div><div class="line">895</div><div class="line">896</div><div class="line">897</div><div class="line">898</div><div class="line">899</div><div class="line">900</div><div class="line">901</div><div class="line">902</div><div class="line">903</div><div class="line">904</div><div class="line">905</div><div class="line">906</div><div class="line">907</div><div class="line">908</div><div class="line">909</div><div class="line">910</div><div class="line">911</div><div class="line">912</div><div class="line">913</div><div class="line">914</div><div class="line">915</div><div class="line">916</div><div class="line">917</div><div class="line">918</div><div class="line">919</div><div class="line">920</div><div class="line">921</div><div class="line">922</div><div class="line">923</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#coding:utf-8</span></div><div class="line"></div><div class="line">import schedule</div><div class="line">import json</div><div class="line">import requests</div><div class="line">from urllib.parse import urlencode</div><div class="line"><span class="comment">#from datetime import datetime</span></div><div class="line">import time</div><div class="line">import datetime</div><div class="line">import random</div><div class="line">import uuid</div><div class="line">import os</div><div class="line">import re</div><div class="line">import itchat</div><div class="line">from wxpy import *</div><div class="line">from threading import Timer</div><div class="line"></div><div class="line">TULING_KEY = <span class="string">'429c47d1d704447aa49ca94f32951ae9'</span>  <span class="comment"># 这里填拿到的图灵机器人key</span></div><div class="line">JISU_KEY = <span class="string">"ea6d5d2f42e2b65b"</span>  <span class="comment">#这里填写拿到的极速数据key</span></div><div class="line">JISU_KEY_2 = <span class="string">"da539df92642eb7e"</span></div><div class="line">START_DATE = <span class="string">'2018-09-10'</span></div><div class="line"></div><div class="line">WELCOME_TEXT = <span class="string">''</span><span class="string">'</span></div><div class="line"><span class="string">    要要要~切克闹，欢迎 @&#123;&#125; 加入~</span></div><div class="line"><span class="string">    新人进来爆三围，爆果照，还有贿赂管理吆~</span></div><div class="line"><span class="string">    格式：</span></div><div class="line"><span class="string">    姓名：多多</span></div><div class="line"><span class="string">    性别：女</span></div><div class="line"><span class="string">    身高：160cm</span></div><div class="line"><span class="string">    三围：80,80,80</span></div><div class="line"><span class="string">    爱好：男</span></div><div class="line"><span class="string">'</span><span class="string">''</span></div><div class="line"><span class="comment">#print(WELCOME_TEXT)</span></div><div class="line"></div><div class="line">FRIEND_LIST = [<span class="string">'多多'</span>, <span class="string">'冬贝'</span>, <span class="string">'林精灵'</span>, <span class="string">'李亚林'</span>, <span class="string">'都基东'</span>, <span class="string">'大河'</span>, <span class="string">'王玉'</span>, <span class="string">'金莉'</span>, <span class="string">'舍得1007'</span>, <span class="string">'华光璞'</span>, <span class="string">'DonGnA'</span>, <span class="string">'葱'</span>, <span class="string">'一米阳光'</span>, <span class="string">'陈杰'</span>, <span class="string">'Sylvia'</span>, <span class="string">'兴全'</span>, <span class="string">'容天下事'</span>, <span class="string">'王恩强'</span>, <span class="string">'平和'</span>, <span class="string">'L由'</span>] <span class="comment">#这里填写呢称,可以发送至多个人</span></div><div class="line">DAILY_GROUP_LIST = [<span class="string">'测试群'</span>, <span class="string">'MIB老友群'</span>, <span class="string">'行者户外'</span>, <span class="string">'林的优品，感谢有你'</span>, <span class="string">'中原乡'</span>, <span class="string">'最爱家'</span>] <span class="comment">#'97届三三班'</span></div><div class="line">AT_GROUP_LIST = [<span class="string">'MIB老友群'</span>, <span class="string">'行者户外'</span>, <span class="string">'97届三三班'</span>, <span class="string">'承德石油97计算机'</span>, <span class="string">'中原乡'</span>, <span class="string">'最爱家'</span>] <span class="comment">#这里填写群名字,可以发送至多个群</span></div><div class="line">AUTO_GROUP_LIST = [<span class="string">'测试群'</span>] <span class="comment">#这里填写群名字,可以发送至多个群</span></div><div class="line"><span class="comment">#LIN_GROUP_LIST = ['林的优品，感谢有你']</span></div><div class="line">LIN_GROUP_LIST = []</div><div class="line">LIN_NAME_LIST = [<span class="string">'亚林'</span>, <span class="string">'李亚林'</span>, <span class="string">'林精灵'</span>, <span class="string">'林精灵2'</span>, <span class="string">'多多'</span>]</div><div class="line">TEST_GROUP_NAME = <span class="string">'测试群'</span></div><div class="line">ADD_FRIEND_REQUEST = <span class="string">'我爱多多'</span></div><div class="line">ADMIN_NAME = <span class="string">'木鱼'</span></div><div class="line">GANK_PATH = <span class="string">'c:/Python34/pics/'</span></div><div class="line">HEADIMG_PATH = <span class="string">'c:/Python34/headImg/'</span></div><div class="line"></div><div class="line"><span class="comment"># 初始化图灵机器人 (API key 申请: http://tuling123.com)</span></div><div class="line">tuling = Tuling(api_key=TULING_KEY)</div><div class="line"></div><div class="line"><span class="comment">#bot = Bot()</span></div><div class="line"><span class="comment">#bot=Bot(cache_path=True) #Windows上登陆网页微信，并保存登陆状态</span></div><div class="line"><span class="comment">#bot = Bot(cache_path=True,qr_path="qr.png")</span></div><div class="line">bot=Bot(cache_path=True,console_qr=1) <span class="comment">#Linux服务器终端界面上使用</span></div><div class="line"></div><div class="line"><span class="comment"># wxpy接口测试</span></div><div class="line">def <span class="built_in">test</span>():</div><div class="line">    <span class="built_in">print</span>(<span class="string">"starting"</span>)</div><div class="line"></div><div class="line">    <span class="comment"># 获取好友的统计信息</span></div><div class="line">    <span class="comment">#tongji = bot.friends(update=True).stats_text()</span></div><div class="line">    <span class="comment"># 并将结果发送到微信文件传输助手</span></div><div class="line">    <span class="comment">#bot.file_helper.send(tongji)</span></div><div class="line"></div><div class="line"></div><div class="line">    <span class="comment"># 给机器人自己发送消息</span></div><div class="line">    bot.self.send(<span class="string">'Hello World!'</span>)</div><div class="line">    <span class="comment"># 给文件传输助手发送消息</span></div><div class="line">    bot.file_helper.send(<span class="string">'Hello World!'</span>)</div><div class="line">    <span class="comment"># 查找昵称为'多多'的好友</span></div><div class="line">    my_friend = bot.friends().search(u<span class="string">'多多'</span>)[0]</div><div class="line">    <span class="built_in">print</span>(my_friend)</div><div class="line">    my_friend.send(u<span class="string">'老子来啦！!'</span>)</div><div class="line">    <span class="comment">#my_friend.send_image('qun.jpg')</span></div><div class="line">    <span class="comment"># 查看 puid</span></div><div class="line">    <span class="comment">#print(my_friend.puid)</span></div><div class="line">    <span class="comment">#my_friend = bot.friends().search(u'林精灵2', sex=FEMALE, city='平顶山')[0]</span></div><div class="line">    <span class="comment"># print(my_friend)</span></div><div class="line">    </div><div class="line">    <span class="comment"># 发送文本</span></div><div class="line">    <span class="comment">#my_friend.send('Hello, WeChat!')</span></div><div class="line">    <span class="comment"># 发送图片</span></div><div class="line">    <span class="comment">#my_friend.send_image('my_picture.png')</span></div><div class="line">    <span class="comment"># 发送视频</span></div><div class="line">    <span class="comment">#my_friend.send_video('my_video.mov')</span></div><div class="line">    <span class="comment"># 发送文件</span></div><div class="line">    <span class="comment">#my_friend.send_file('my_file.zip')</span></div><div class="line">    <span class="comment"># 以动态的方式发送图片</span></div><div class="line">    <span class="comment">#my_friend.send('@img@my_picture.png')</span></div><div class="line"></div><div class="line">    <span class="comment"># 获取所有好友</span></div><div class="line">    friends = bot.friends(update=True)</div><div class="line">    <span class="comment"># 遍历输出好友名称</span></div><div class="line">    <span class="keyword">for</span> friend <span class="keyword">in</span> friends:</div><div class="line">        try:</div><div class="line">            <span class="built_in">print</span>(friend)</div><div class="line">        except:</div><div class="line">            <span class="built_in">print</span>(<span class="string">'error'</span>)</div><div class="line"></div><div class="line">    <span class="comment"># 获取所有聊天群</span></div><div class="line">    groups = bot.groups()</div><div class="line">    <span class="keyword">for</span> group <span class="keyword">in</span> groups:</div><div class="line">        <span class="built_in">print</span>(group)</div><div class="line"></div><div class="line">    <span class="comment"># 找到目标群"MIB老友群"</span></div><div class="line">    mib_group = bot.groups(update=True).search(u<span class="string">"MIB老友群"</span>)[0]</div><div class="line">    <span class="built_in">print</span>(len(mib_group)) <span class="comment"># 这个群的成员数量</span></div><div class="line">    <span class="comment">#mib_group.send(u"我来啦~")</span></div><div class="line">    <span class="keyword">if</span> my_friend <span class="keyword">in</span> mib_group:</div><div class="line">        <span class="built_in">print</span>(<span class="string">'是的，&#123;&#125; 在 &#123;&#125; 中！'</span>.format(my_friend.name, mib_group.name))</div><div class="line"></div><div class="line">    member = mib_group.search(<span class="string">'多多'</span>)[0]</div><div class="line">    <span class="keyword">if</span> member == my_friend:</div><div class="line">        <span class="comment"># &lt;Member: 多多&gt; is &lt;Friend: 多多&gt;</span></div><div class="line">        <span class="built_in">print</span>(<span class="string">'&#123;&#125; is &#123;&#125;'</span>.format(member, my_friend))</div><div class="line">    </div><div class="line">    <span class="comment"># 打印所有群成员</span></div><div class="line">    <span class="keyword">for</span> member <span class="keyword">in</span> mib_group:</div><div class="line">        try:</div><div class="line">            <span class="built_in">print</span>(member)</div><div class="line">            <span class="comment">#若为好友关系，返回对应的好友，否则返回 False</span></div><div class="line">            <span class="keyword">if</span> member.is_friend:</div><div class="line">                <span class="built_in">print</span>(<span class="string">'&#123;&#125; 已在好友。'</span>.format(member))</div><div class="line">                <span class="comment">#member.send_image('qun.jpg')</span></div><div class="line">            <span class="keyword">else</span>:</div><div class="line">                <span class="built_in">print</span>(<span class="string">'&#123;&#125; 不是好友。'</span>.format(member))</div><div class="line">                <span class="comment">#member.add('你好，加我好友入群，口令：我爱多多')</span></div><div class="line">        except:</div><div class="line">            <span class="built_in">print</span>(<span class="string">'打印 &#123;&#125; 出错。'</span>.format(member))</div><div class="line"></div><div class="line">    <span class="built_in">print</span>(<span class="string">"ending"</span>)</div><div class="line"></div><div class="line"><span class="comment"># 取得所有好友的信息</span></div><div class="line">def get_all_friends():</div><div class="line">    friends = bot.friends(update=True) <span class="comment">#获取更新好友列表</span></div><div class="line">    user = friends[0].user_name</div><div class="line">    <span class="built_in">print</span>(<span class="string">"授权微信用户为："</span>+user)</div><div class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> friends[1:]: <span class="comment">#[1:]是因为整个好友列表里面自己市在第一个，排除掉</span></div><div class="line">        sex = i.sex</div><div class="line">        <span class="keyword">if</span> sex == 1:</div><div class="line">            sex = <span class="string">'男'</span></div><div class="line">        <span class="keyword">elif</span> sex == 2:</div><div class="line">            sex = <span class="string">'女'</span></div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            sex = <span class="string">'未知'</span></div><div class="line">        userName = i.user_name</div><div class="line">        nickName = i.nick_name</div><div class="line">        remarkName = i.remark_name</div><div class="line">        province = i.province</div><div class="line">        city = i.city</div><div class="line">        signature = i.signature.strip().replace(<span class="string">"span"</span>, <span class="string">""</span>).replace(<span class="string">"class"</span>, <span class="string">""</span>).replace(<span class="string">"emoji"</span>, <span class="string">""</span>)</div><div class="line">        <span class="comment"># 正则匹配过滤掉emoji表情，例如emoji1f3c3等</span></div><div class="line">        rep = re.compile(<span class="string">"1f\d.+"</span>)</div><div class="line">        signature = rep.sub(<span class="string">""</span>, signature)</div><div class="line">        userInfo = userName+<span class="string">','</span>+nickName+<span class="string">','</span>+remarkName+<span class="string">','</span>+province+<span class="string">','</span>+city+<span class="string">','</span>+signature+<span class="string">','</span>+sex</div><div class="line">        <span class="built_in">print</span>(userName+<span class="string">','</span>+nickName)</div><div class="line"></div><div class="line"><span class="string">''</span><span class="string">'</span></div><div class="line"><span class="string">处理加好友信息</span></div><div class="line"><span class="string">'</span><span class="string">''</span></div><div class="line"><span class="comment"># 注册一个监听器，来监听类型是 FRIEDNS 的消息，也就是加好友的消息。</span></div><div class="line"><span class="comment">#@bot.register(msg_types=FRIENDS,enabled=True)</span></div><div class="line"><span class="comment"># 自动接受验证信息中包含 '我爱多多' 的好友请求</span></div><div class="line">def auto_accept_friends(msg):</div><div class="line">    <span class="comment"># 判断好友请求中的验证文本</span></div><div class="line">    <span class="keyword">if</span> ADD_FRIEND_REQUEST <span class="keyword">in</span> msg.text.lower():</div><div class="line">        <span class="comment"># 接受好友 (msg.card 为该请求的用户对象)</span></div><div class="line">        new_friend = bot.accept_friend(msg.card)</div><div class="line">        <span class="comment"># 或 new_friend = msg.card.accept()</span></div><div class="line">        <span class="comment"># 向新的好友发送消息</span></div><div class="line">        new_friend.send(<span class="string">'机器人自动接受了你的请求,你可以任意回复获取功能菜单，若机器人没回复菜单则表明机器人尚未工作，请等待'</span>)</div><div class="line"></div><div class="line"><span class="string">''</span><span class="string">'</span></div><div class="line"><span class="string">定义邀请用户的方法</span></div><div class="line"><span class="string">'</span><span class="string">''</span></div><div class="line">def invite(user):</div><div class="line">    <span class="comment">#group =  bot.groups().search(TEST_GROUP_NAME)[0]</span></div><div class="line">    <span class="comment">#超出100人，true</span></div><div class="line">    <span class="comment">#group.add_members(user, use_invitation=True)</span></div><div class="line">    <span class="comment">#group.add_members(user)</span></div><div class="line">    groups = sorted(bot.groups(update=True).search(TEST_GROUP_NAME),</div><div class="line">                    key=lambda x: x.name)   <span class="comment">#sorted用于排序，lambda x:x.name用于群名排序</span></div><div class="line">    <span class="keyword">if</span> len(groups) &gt; 0:</div><div class="line">        <span class="keyword">for</span> group <span class="keyword">in</span> groups:</div><div class="line">            <span class="keyword">if</span> len(group.members) == 500:</div><div class="line">                <span class="built_in">continue</span>    </div><div class="line">            <span class="keyword">if</span> user <span class="keyword">in</span> group:</div><div class="line">                content = <span class="string">"您已经加入了&#123;&#125; [微笑]"</span>.format(group.nick_name)   <span class="comment">#经过format格式化的内容传递到&#123;&#125;</span></div><div class="line">                user.send(content)</div><div class="line">            <span class="keyword">else</span>:</div><div class="line">                group.add_members(user, use_invitation=True)</div><div class="line">            <span class="built_in">return</span></div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="built_in">print</span>(<span class="string">'Invite Failed'</span>)</div><div class="line"></div><div class="line"></div><div class="line">invite_text = <span class="string">"Helo!回复'功能 + 数字'获取对应功能\n1.我要加群\n2.我要加入协会\n3.我要购买鞋子\n4.了解我们\n5.我需要帮助\n例如：要获取我要加群的功能时回复\n\n功能1"</span>  <span class="comment">#任意回复获取的菜单</span></div><div class="line"><span class="comment">#注册自动回复好友消息</span></div><div class="line"><span class="comment">#@bot.register(Friend, msg_types=TEXT)</span></div><div class="line">def exist_friends(msg):</div><div class="line">    <span class="keyword">if</span> menu_1 <span class="keyword">in</span> msg.text.lower():</div><div class="line">        invite(msg.sender)</div><div class="line">    <span class="keyword">elif</span> menu_2 <span class="keyword">in</span> msg.text.lower():</div><div class="line">        content_2_1 = <span class="string">"请复制下面的模板回复\nps：部门可以多填，如果是技术部和Hockey就填写 部门：技术部、Hockey\n填写示例：\n姓名：小明\n学号：111111111\n电话：18888888888\n部门：技术部"</span></div><div class="line">        content_2_2 = <span class="string">"报名表\n姓名:\n学号:\n电话:\n部门:"</span></div><div class="line">        msg.sender.send(content_2_1)</div><div class="line">        msg.sender.send(content_2_2)</div><div class="line">    <span class="keyword">elif</span> menu_3 <span class="keyword">in</span> msg.text.lower():</div><div class="line">        <span class="built_in">return</span> <span class="string">'购买鞋子功能测试中'</span> <span class="comment">#跟报名的功能差不多就不写了。。。</span></div><div class="line">    <span class="keyword">elif</span> menu_4 <span class="keyword">in</span> msg.text.lower():</div><div class="line">        msg.sender.send(<span class="string">'关注公众号可以了解更多'</span>)</div><div class="line">        msg.sender.send_raw_msg(</div><div class="line">        <span class="comment"># 名片的原始消息类型</span></div><div class="line">        raw_type=42,</div><div class="line">        <span class="comment"># 注意 `username` 在这里应为微信 ID，且被发送的名片必须为自己的好友</span></div><div class="line">        raw_content=<span class="string">'&lt;msg username="hnxyy2016" nickname="元哥二号"/&gt;'</span></div><div class="line">        )   </div><div class="line">    <span class="keyword">elif</span> menu_5 <span class="keyword">in</span> msg.text.lower():</div><div class="line">        <span class="built_in">return</span> <span class="string">'我要帮助功能测试中'</span>     <span class="comment">#最初设想是返回从公众号获取的素材，结果没有相对应的Api。只能返回图片，语音，或者文本了，不过这个就一行代码的事，就不写了</span></div><div class="line">    <span class="keyword">elif</span> <span class="string">'支付宝'</span> <span class="keyword">in</span> msg.text.lower():</div><div class="line">        msg.sender.send(<span class="string">'请进入支付宝扫描二维码支付，备注姓名，电话\n支付完成后请第二天回复“查询:+学生号“查询情况\n示例：\n查询:111111111'</span>)</div><div class="line">        msg.sender.send(<span class="string">'二维码生成中'</span>)</div><div class="line">        msg.sender.send_image(<span class="string">'zfb.png'</span>)</div><div class="line">    <span class="keyword">elif</span> <span class="string">'微信'</span> <span class="keyword">in</span> msg.text.lower():</div><div class="line">        msg.sender.send(<span class="string">'请进入微信扫描二维码支付，备注姓名，电话\n支付完成后请第二天回复“查询:+学生号“查询情况\n示例：\n查询:111111111'</span>)</div><div class="line">        msg.sender.send(<span class="string">'二维码生成中'</span>)</div><div class="line">        msg.sender.send_image(<span class="string">'wx.png'</span>)</div><div class="line">    <span class="keyword">elif</span> <span class="string">'其它'</span> <span class="keyword">in</span> msg.text:</div><div class="line">        <span class="built_in">return</span> <span class="string">'other...'</span></div><div class="line">    <span class="keyword">elif</span> <span class="string">'管理员'</span> <span class="keyword">in</span> msg.text:</div><div class="line">        msg.sender.send(<span class="string">'请添加名片联系管理员'</span>)</div><div class="line">        msg.sender.send_raw_msg(</div><div class="line">        <span class="comment"># 名片的原始消息类型</span></div><div class="line">        raw_type=42,</div><div class="line">        <span class="comment"># 注意 `username` 在这里应为微信 ID，且被发送的名片必须为自己的好友</span></div><div class="line">        raw_content=<span class="string">'&lt;msg username="my15990709" nickname="木鱼"/&gt;'</span></div><div class="line">        )   </div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="built_in">return</span> invite_text</div><div class="line"></div><div class="line">adminer = bot.friends(update=True).search(<span class="string">'多多'</span>)[0]</div><div class="line"><span class="comment">#处理管理员信息</span></div><div class="line">@bot.register(adminer, msg_types=TEXT)</div><div class="line">def adminer(msg):</div><div class="line">    <span class="keyword">if</span> <span class="string">'唐诗'</span> <span class="keyword">in</span> msg.text:</div><div class="line">        <span class="comment">#msg.sender.send_file('test.csv')</span></div><div class="line">        <span class="comment">#随机取得一首唐诗</span></div><div class="line">        content = get_tangshi(0)</div><div class="line">        msg.sender.send(content)</div><div class="line">    <span class="keyword">elif</span> <span class="string">'每日一句'</span> <span class="keyword">in</span> msg.text:</div><div class="line">        <span class="comment">#每日一句</span></div><div class="line">        content = get_everydayWords()</div><div class="line">        msg.sender.send(content)</div><div class="line">    <span class="keyword">elif</span> <span class="string">'黄历'</span> <span class="keyword">in</span> msg.text:</div><div class="line">        <span class="comment">#黄历</span></div><div class="line">        content = get_huangli()</div><div class="line">        msg.sender.send(content)</div><div class="line">    <span class="keyword">elif</span> <span class="string">'北京天气'</span> <span class="keyword">in</span> msg.text:</div><div class="line">        <span class="comment">#北京天气</span></div><div class="line">        content = get_weather()+get_airQuality()</div><div class="line">        msg.sender.send(content)</div><div class="line">    <span class="keyword">elif</span> <span class="string">'妹子图'</span> <span class="keyword">in</span> msg.text:</div><div class="line">        ran_int = random.randint(1,500)</div><div class="line">        image = GANK_PATH + str(ran_int) + <span class="string">'.jpg'</span></div><div class="line">        <span class="built_in">print</span>(image)</div><div class="line">        msg.sender.send_image(image)</div><div class="line">    <span class="keyword">elif</span> <span class="string">'妹纸图'</span> <span class="keyword">in</span> msg.text:</div><div class="line">        <span class="comment">#msg.sender.send_image('wx.png')</span></div><div class="line">        <span class="comment">#msg.sender.send('此功能正在开发ing~')</span></div><div class="line">        msg.sender.send(<span class="string">'正在获取妹纸图，请稍候~'</span>)</div><div class="line">        image = get_meiztu()</div><div class="line">        <span class="keyword">if</span> image:</div><div class="line">            msg.sender.send_image(image)</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            msg.sender.send(<span class="string">'妹纸图获取失败~'</span>)</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="comment">#return "开发中~"</span></div><div class="line">        tuling.do_reply(msg)</div><div class="line"></div><div class="line">my_group = bot.groups(update=True).search(<span class="string">'测试群'</span>)[0]</div><div class="line">group_admin = my_group.members.search(<span class="string">'木鱼'</span>)[0]</div><div class="line"><span class="comment">#群聊管理</span></div><div class="line"><span class="comment">#@bot.register(my_group, msg_types=TEXT)</span></div><div class="line">def group(msg):</div><div class="line">    <span class="keyword">if</span> msg.is_at :</div><div class="line">        <span class="keyword">if</span> <span class="string">'踢出'</span> <span class="keyword">in</span> msg.text:</div><div class="line">            <span class="keyword">if</span> msg.member == group_admin :</div><div class="line">                <span class="keyword">for</span> member_name <span class="keyword">in</span> msg.text.split(<span class="string">'@'</span>)[2:]:</div><div class="line">                    <span class="built_in">print</span>(member_name)</div><div class="line">                    re_name = my_group.members.search(member_name)[0].remove()</div><div class="line">                    <span class="built_in">print</span>(re_name)</div><div class="line">                    msg.sender.send(<span class="string">"已经移出:"</span>+member_name)</div><div class="line">            <span class="keyword">else</span>:</div><div class="line">                <span class="built_in">return</span> <span class="string">"你不是管理员不能进行踢人操作"</span></div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            <span class="comment">#xiaoi.do_reply(msg)</span></div><div class="line">            tuling.do_reply(msg)</div><div class="line"></div><div class="line"><span class="comment"># 新人入群通知的匹配正则</span></div><div class="line">rp_new_member_name = (</div><div class="line">    re.compile(r<span class="string">'^"(.+)"通过'</span>),</div><div class="line">    re.compile(r<span class="string">'邀请"(.+)"加入'</span>),</div><div class="line">)</div><div class="line">def get_new_member_name(msg):</div><div class="line">    <span class="comment"># itchat 1.2.32 版本未格式化群中的 Note 消息</span></div><div class="line">    from itchat.utils import msg_formatter</div><div class="line">    msg_formatter(msg.raw, <span class="string">'Text'</span>)</div><div class="line">    <span class="keyword">for</span> rp <span class="keyword">in</span> rp_new_member_name:</div><div class="line">        match = rp.search(msg.text)</div><div class="line">        <span class="keyword">if</span> match:</div><div class="line">            <span class="built_in">return</span> match.group(1)</div><div class="line"></div><div class="line"><span class="comment"># 需管理的微信群</span></div><div class="line"><span class="comment"># 可为多个，机器人必须为群主，否则无法执行相应操作</span></div><div class="line"><span class="comment"># 新人欢迎消息</span></div><div class="line"><span class="comment">#@bot.register(my_group, NOTE)</span></div><div class="line">def welcome(msg):</div><div class="line">    name = get_new_member_name(msg)</div><div class="line">    <span class="keyword">if</span> name:</div><div class="line">        <span class="built_in">return</span> WELCOME_TEXT.format(name)</div><div class="line">    </div><div class="line"><span class="comment"># 新人入群欢迎消息</span></div><div class="line"><span class="comment">#@bot.register(my_group, NOTE)</span></div><div class="line">def welcome2(msg):</div><div class="line">    try:</div><div class="line">        <span class="built_in">print</span>(msg)</div><div class="line">        new_member_name = re.search(r<span class="string">'邀请"(.+?)"|"(.+?)"通过'</span>, msg.text).group(1)</div><div class="line">        <span class="built_in">return</span> WELCOME_TEXT.format(new_member_name)</div><div class="line">    except AttributeError:</div><div class="line">        <span class="built_in">return</span></div><div class="line"></div><div class="line"><span class="comment"># 取得群指定的成员</span></div><div class="line">def get_members(group):</div><div class="line">    members = []</div><div class="line">    <span class="keyword">for</span> name <span class="keyword">in</span> LIN_NAME_LIST:</div><div class="line">        try:</div><div class="line">            <span class="comment">#lin = ensure_one(group.search(name))</span></div><div class="line">            member = group.search(name)[0]</div><div class="line">            members.append(member)</div><div class="line">            <span class="comment">#print('成员 &#123;&#125; 在 群 &#123;&#125; 里. '.format(member, group))</span></div><div class="line">        except:</div><div class="line">            <span class="comment">#print('error')</span></div><div class="line">            <span class="comment">#继续下次循环</span></div><div class="line">            <span class="built_in">continue</span></div><div class="line"></div><div class="line">    <span class="built_in">return</span> members</div><div class="line"></div><div class="line"><span class="comment"># 打印群成员列表</span></div><div class="line">def printMembers(group):</div><div class="line">    <span class="keyword">for</span> member <span class="keyword">in</span> group:</div><div class="line">        try:</div><div class="line">            <span class="built_in">print</span>(member)</div><div class="line">        except:</div><div class="line">            <span class="built_in">print</span>(<span class="string">'error'</span>)</div><div class="line">    <span class="built_in">return</span> <span class="string">''</span></div><div class="line"></div><div class="line"><span class="comment"># lin的群</span></div><div class="line">lin_groups = []</div><div class="line"><span class="comment"># lin在群里的成员</span></div><div class="line">lin_members = []</div><div class="line"><span class="keyword">for</span> group_name <span class="keyword">in</span> LIN_GROUP_LIST:</div><div class="line">    try:</div><div class="line">        <span class="comment">#group = ensure_one(bot.groups().search(group_name))</span></div><div class="line">        group = bot.groups(update=True).search(group_name)[0]</div><div class="line">        <span class="comment">#printMembers(group)</span></div><div class="line">        lin_groups.append(group)</div><div class="line">        <span class="comment">#print(lin_groups)</span></div><div class="line">        members = get_members(group)</div><div class="line">        <span class="comment">#print(members)</span></div><div class="line">        lin_members.extend(members)</div><div class="line">    except:</div><div class="line">        <span class="built_in">print</span>(<span class="string">'error'</span>)</div><div class="line">        </div><div class="line"><span class="comment"># 通过set方法去重</span></div><div class="line">lin_members = list(<span class="built_in">set</span>(lin_members))</div><div class="line"><span class="comment"># 输出</span></div><div class="line"><span class="comment">#print('lin_members is &#123;&#125; '.format(lin_members))</span></div><div class="line"><span class="comment">#print('lin_groups is &#123;&#125; '.format(lin_groups))</span></div><div class="line"></div><div class="line"><span class="comment"># lin的消息转发到文件传输助手</span></div><div class="line">@bot.register(lin_groups,msg_types=TEXT)</div><div class="line">def reply_lin_message(msg):</div><div class="line">    <span class="comment">#print(msg)</span></div><div class="line">    <span class="comment">#if msg.member in lin_members:</span></div><div class="line">    <span class="keyword">if</span> msg.member.name <span class="keyword">in</span> LIN_NAME_LIST:</div><div class="line">        <span class="comment">#print(msg.member)</span></div><div class="line">        <span class="comment">#print(msg.member.name)</span></div><div class="line">        tuling.do_reply(msg)</div><div class="line">        <span class="comment">#msg.forward(bot.file_helper, prefix='Lin发言')</span></div><div class="line"></div><div class="line"><span class="comment"># @群组列表</span></div><div class="line">at_groups = []</div><div class="line"><span class="keyword">for</span> group_name <span class="keyword">in</span> AT_GROUP_LIST:</div><div class="line">    try:</div><div class="line">        group = bot.groups().search(group_name)[0]</div><div class="line">        at_groups.append(group)</div><div class="line">    except:</div><div class="line">        <span class="built_in">print</span>(<span class="string">'error'</span>)</div><div class="line"><span class="comment">#print('at_groups is &#123;&#125; '.format(at_groups))</span></div><div class="line">            </div><div class="line"><span class="comment"># 被@自动回复信息</span></div><div class="line"><span class="comment">#@bot.register(at_groups,msg_types=TEXT)</span></div><div class="line"><span class="comment">#@bot.register(at_groups,[TEXT,NOTE])</span></div><div class="line">@bot.register(at_groups,[TEXT, PICTURE, MAP, CARD, NOTE, SHARING, RECORDING, ATTACHMENT, VIDEO])</div><div class="line">def at_reply_all(msg):</div><div class="line">    <span class="comment"># &lt;测试群：多多&gt;：[妹纸图] &lt;Text&gt;</span></div><div class="line">    <span class="comment">#print('&lt;&#123;&#125;：&#123;&#125;&gt;：[&#123;&#125;] &lt;&#123;&#125;&gt;'.format(msg.sender.name, msg.member.name, msg.text, msg.type))</span></div><div class="line">    <span class="comment">#print('[&#123;&#125;] &lt;&#123;&#125;&gt;'.format(msg.text, msg.type))</span></div><div class="line">    <span class="keyword">if</span> msg.is_at:</div><div class="line">        <span class="comment">#打印群聊中@自己的文本消息</span></div><div class="line">        <span class="comment">#print(msg.text)</span></div><div class="line">        <span class="comment">#自动回复相同内容</span></div><div class="line">        <span class="comment">#msg.reply(msg.text)</span></div><div class="line">        <span class="comment">#图灵机器人自动回复</span></div><div class="line">        tuling.do_reply(msg)</div><div class="line">    <span class="keyword">else</span>:    </div><div class="line">        <span class="keyword">if</span> msg.type == <span class="string">'Note'</span>:</div><div class="line">            <span class="comment"># 欢迎新人</span></div><div class="line">            name = get_new_member_name(msg)</div><div class="line">            <span class="keyword">if</span> name:</div><div class="line">                <span class="built_in">return</span> WELCOME_TEXT.format(name)</div><div class="line">        <span class="keyword">elif</span> msg.type == <span class="string">'Text'</span>:</div><div class="line">            <span class="comment">#if msg.member.name in LIN_NAME_LIST:</span></div><div class="line">            <span class="keyword">if</span> <span class="string">'唐诗'</span> <span class="keyword">in</span> msg.text.lower():</div><div class="line">                <span class="comment">#msg.sender.send_file('test.csv')</span></div><div class="line">                <span class="comment">#随机取得一首唐诗</span></div><div class="line">                content = get_tangshi(0)</div><div class="line">                msg.sender.send(content)</div><div class="line">            <span class="keyword">elif</span> <span class="string">'每日一句'</span> <span class="keyword">in</span> msg.text.lower():</div><div class="line">                <span class="comment">#每日一句</span></div><div class="line">                content = get_everydayWords()</div><div class="line">                msg.sender.send(content)</div><div class="line">            <span class="keyword">elif</span> <span class="string">'黄历'</span> <span class="keyword">in</span> msg.text.lower():</div><div class="line">                <span class="comment">#黄历</span></div><div class="line">                content = get_huangli()</div><div class="line">                msg.sender.send(content)</div><div class="line">            <span class="keyword">elif</span> <span class="string">'北京天气'</span> <span class="keyword">in</span> msg.text.lower():</div><div class="line">                <span class="comment">#北京天气</span></div><div class="line">                content = get_weather()+get_airQuality()</div><div class="line">                msg.sender.send(content)</div><div class="line">            <span class="keyword">elif</span> <span class="string">'妹子图'</span> <span class="keyword">in</span> msg.text.lower():</div><div class="line">                ran_int = random.randint(1,500)</div><div class="line">                image = GANK_PATH + str(ran_int) + <span class="string">'.jpg'</span></div><div class="line">                <span class="built_in">print</span>(image)</div><div class="line">                msg.sender.send_image(image)</div><div class="line">            <span class="keyword">elif</span> <span class="string">'妹纸图'</span> <span class="keyword">in</span> msg.text.lower():</div><div class="line">                msg.sender.send(<span class="string">'正在获取妹纸图，请稍候~'</span>)</div><div class="line">                image = get_meiztu()</div><div class="line">                <span class="keyword">if</span> image:</div><div class="line">                    msg.sender.send_image(image)</div><div class="line">                <span class="keyword">else</span>:</div><div class="line">                    msg.sender.send(<span class="string">'妹纸图获取失败~'</span>)</div><div class="line">            <span class="keyword">elif</span> <span class="string">'头像'</span> <span class="keyword">in</span> msg.text.lower():</div><div class="line">                <span class="comment"># 发送头像</span></div><div class="line">                sendHeadImg(msg.sender, msg.member)</div><div class="line">                <span class="comment">#msg.sender.send('头像')</span></div><div class="line">            <span class="keyword">elif</span> <span class="string">'群统计'</span> <span class="keyword">in</span> msg.text:</div><div class="line">                group = msg.sender</div><div class="line">                group.update_group(True)</div><div class="line">                <span class="comment">#print(group.members.stats_text())</span></div><div class="line">                group.send(group.members.stats_text())</div><div class="line">            <span class="keyword">else</span>:</div><div class="line">                <span class="comment">#msg.sender.send('开发中~')</span></div><div class="line">                try:</div><div class="line">                    member = msg.sender.search(msg.text.lower())[0]</div><div class="line">                    sendHeadImg(msg.sender, member)</div><div class="line">                except:</div><div class="line">                    <span class="built_in">return</span></div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            <span class="built_in">return</span></div><div class="line"></div><div class="line"><span class="comment"># 自动回复群组列表</span></div><div class="line">auto_groups = []</div><div class="line"><span class="keyword">for</span> group_name <span class="keyword">in</span> AUTO_GROUP_LIST:</div><div class="line">    try:</div><div class="line">        group = bot.groups().search(group_name)[0]</div><div class="line">        auto_groups.append(group)</div><div class="line">    except:</div><div class="line">        <span class="built_in">print</span>(<span class="string">'error'</span>)</div><div class="line"><span class="comment">#print('auto_groups is &#123;&#125; '.format(auto_groups))</span></div><div class="line"></div><div class="line"><span class="comment"># 自动回复群信息</span></div><div class="line">@bot.register(auto_groups,msg_types=TEXT)</div><div class="line">def auto_reply_all(msg):</div><div class="line">    <span class="comment">#print('[&#123;&#125;] &lt;&#123;&#125;&gt;'.format(msg.text, msg.type))</span></div><div class="line">    <span class="keyword">if</span> msg.member.name <span class="keyword">in</span> LIN_NAME_LIST:</div><div class="line">        <span class="keyword">if</span> <span class="string">'唐诗'</span> <span class="keyword">in</span> msg.text:</div><div class="line">            <span class="comment">#msg.sender.send_file('test.csv')</span></div><div class="line">            <span class="comment">#随机取得一首唐诗</span></div><div class="line">            content = get_tangshi(0)</div><div class="line">            msg.sender.send(content)</div><div class="line">        <span class="keyword">elif</span> <span class="string">'每日一句'</span> <span class="keyword">in</span> msg.text:</div><div class="line">            <span class="comment">#每日一句</span></div><div class="line">            content = get_everydayWords()</div><div class="line">            msg.sender.send(content)</div><div class="line">        <span class="keyword">elif</span> <span class="string">'黄历'</span> <span class="keyword">in</span> msg.text:</div><div class="line">            <span class="comment">#黄历</span></div><div class="line">            content = get_huangli()</div><div class="line">            msg.sender.send(content)</div><div class="line">        <span class="keyword">elif</span> <span class="string">'北京天气'</span> <span class="keyword">in</span> msg.text:</div><div class="line">            <span class="comment">#北京天气</span></div><div class="line">            content = get_weather()+get_airQuality()</div><div class="line">            msg.sender.send(content)</div><div class="line">        <span class="keyword">elif</span> <span class="string">'妹子图'</span> <span class="keyword">in</span> msg.text:</div><div class="line">            ran_int = random.randint(1,500)</div><div class="line">            image = GANK_PATH + str(ran_int) + <span class="string">'.jpg'</span></div><div class="line">            <span class="built_in">print</span>(image)</div><div class="line">            msg.sender.send_image(image)</div><div class="line">        <span class="keyword">elif</span> <span class="string">'妹纸图'</span> <span class="keyword">in</span> msg.text:</div><div class="line">            <span class="comment">#msg.sender.send_image('wx.png')</span></div><div class="line">            <span class="comment">#msg.sender.send('此功能正在开发ing~')</span></div><div class="line">            msg.sender.send(<span class="string">'正在获取妹纸图，请稍候~'</span>)</div><div class="line">            image = get_meiztu()</div><div class="line">            <span class="keyword">if</span> image:</div><div class="line">                msg.sender.send_image(image)</div><div class="line">            <span class="keyword">else</span>:</div><div class="line">                msg.sender.send(<span class="string">'妹纸图获取失败~'</span>)</div><div class="line">        <span class="keyword">elif</span> <span class="string">'头像'</span> <span class="keyword">in</span> msg.text.lower():</div><div class="line">            <span class="comment"># 发送头像</span></div><div class="line">            sendHeadImg(msg.sender, msg.member)</div><div class="line">            <span class="comment">#msg.sender.send('头像')</span></div><div class="line">        <span class="keyword">elif</span> <span class="string">'群统计'</span> <span class="keyword">in</span> msg.text:</div><div class="line">            group = msg.sender</div><div class="line">            group.update_group(True)</div><div class="line">            <span class="comment">#print(group.members.stats_text())</span></div><div class="line">            group.send(group.members.stats_text())</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            <span class="comment">#图灵机器人自动回复</span></div><div class="line">            tuling.do_reply(msg)</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        tuling.do_reply(msg)</div><div class="line"></div><div class="line"><span class="comment"># 统计群成员信息</span></div><div class="line">def groupStats(group_name):</div><div class="line">    <span class="comment"># 获取群成员的统计信息</span></div><div class="line">    group = bot.groups(update=True).search(group_name)[0]</div><div class="line">    <span class="comment"># 更新群信息</span></div><div class="line">    group.update_group(True)</div><div class="line">    <span class="built_in">print</span>(group.members.stats_text())</div><div class="line"></div><div class="line"><span class="comment"># 找到指定城市指定性别的成员</span></div><div class="line">def find_townsmans(group, city, sex):</div><div class="line">    townsmans = []</div><div class="line">    <span class="keyword">for</span> member <span class="keyword">in</span> group.members:</div><div class="line">        <span class="keyword">if</span> member.city == city and member.sex == sex:</div><div class="line">            <span class="comment">#print(member)</span></div><div class="line">            townsmans.append(member)</div><div class="line">    <span class="built_in">return</span> townsmans</div><div class="line">    </div><div class="line"><span class="comment"># 发送好友头像</span></div><div class="line">def sendHeadImg(sender, friend):</div><div class="line">    <span class="comment">#sender.send('正在获取头像，请稍候~')</span></div><div class="line">    headImg = get_friend_headImg(friend)</div><div class="line">    <span class="keyword">if</span> headImg:</div><div class="line">        sender.send_image(headImg)</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        sender.send(<span class="string">'头像获取失败~'</span>)</div><div class="line"></div><div class="line"><span class="comment"># 取得指定好友头像</span></div><div class="line">def get_friend_headImg(friend):</div><div class="line">    try:</div><div class="line">        userName = friend.user_name</div><div class="line">        nickName = friend.nick_name</div><div class="line">        <span class="built_in">print</span>(<span class="string">'正在获取成员 [&#123;&#125;] 的头像...'</span>.format(nickName))</div><div class="line">        <span class="comment"># 不存在则创建头像目录</span></div><div class="line">        <span class="keyword">if</span> not os.path.exists(HEADIMG_PATH):</div><div class="line">            os.mkdir(HEADIMG_PATH)</div><div class="line">        <span class="comment"># 头像文件名</span></div><div class="line">        headImgName = HEADIMG_PATH + userName + <span class="string">'.jpg'</span></div><div class="line">        <span class="comment"># 判断头像是否存在</span></div><div class="line">        <span class="keyword">if</span> not os.path.exists(headImgName):</div><div class="line">            <span class="comment"># 抓取头像保存到本地</span></div><div class="line">            <span class="comment">#img = friend.get_avatar(None)</span></div><div class="line">            <span class="comment">#fileImage = open(headImgName,'wb')</span></div><div class="line">            <span class="comment">#fileImage.write(img)</span></div><div class="line">            <span class="comment">#fileImage.close()</span></div><div class="line">            friend.get_avatar(save_path=headImgName)</div><div class="line">        <span class="built_in">print</span>(<span class="string">'头像获取成功.'</span>)</div><div class="line">        <span class="built_in">return</span> headImgName</div><div class="line">    except:</div><div class="line">        <span class="built_in">print</span>(<span class="string">'头像获取失败.'</span>)</div><div class="line">        <span class="built_in">return</span> False</div><div class="line"></div><div class="line"><span class="comment"># 随机获取干货集中营妹子图url</span></div><div class="line">def get_images_url():</div><div class="line">    ran_int = random.randint(1,500)</div><div class="line">    <span class="comment">#api_url = 'http://gank.io/api/data/福利/1/' + str(ran_int)</span></div><div class="line">    api_url = <span class="string">'http://gank.io/api/data/%E7%A6%8F%E5%88%A9/1/'</span> + str(ran_int)</div><div class="line">    <span class="built_in">print</span>(api_url)</div><div class="line">    try:</div><div class="line">        r = requests.get(api_url)</div><div class="line">        <span class="comment">#print(r.text)</span></div><div class="line">        <span class="built_in">print</span>(<span class="string">'正在获取图片地址'</span>)</div><div class="line">        result = json.loads(r.text)</div><div class="line">        results = result[<span class="string">'results'</span>]</div><div class="line">        <span class="comment">#print(results)</span></div><div class="line">        url = results[0][<span class="string">'url'</span>]</div><div class="line">        <span class="built_in">return</span> url</div><div class="line">    except Exception:</div><div class="line">        <span class="built_in">print</span>(<span class="string">'获取图片地址失败'</span>)</div><div class="line">        <span class="built_in">return</span> False</div><div class="line"></div><div class="line"><span class="comment"># 保存图片到本地目录</span></div><div class="line">def save_file(path, name, data):</div><div class="line">    <span class="built_in">print</span>(<span class="string">'正在保存图片 &#123;&#125; '</span>.format(name))</div><div class="line">    file = open(path + name, <span class="string">'wb'</span>)</div><div class="line">    file.write(data)</div><div class="line">    file.close()</div><div class="line">    <span class="built_in">print</span>(<span class="string">'成功保存图片 &#123;&#125; '</span>.format(name))</div><div class="line"></div><div class="line"><span class="comment"># 抓取图片数据</span></div><div class="line">def get_image(url):</div><div class="line">    try:</div><div class="line">        <span class="built_in">print</span>(<span class="string">'正在获取图片数据, 请稍候...'</span>)</div><div class="line">        r = requests.get(url)</div><div class="line">        <span class="built_in">return</span> r.content</div><div class="line">    except Exception:</div><div class="line">        <span class="built_in">print</span>(<span class="string">'获取图片失败'</span>)</div><div class="line">        <span class="built_in">return</span> False</div><div class="line"></div><div class="line"><span class="comment"># 生成文件名</span></div><div class="line">def get_file_name(url):</div><div class="line">    ext = url[url.rindex(<span class="string">"."</span>):]</div><div class="line">    <span class="keyword">if</span> len(ext) &gt; 4 :</div><div class="line">        ext = <span class="string">'.jpg'</span></div><div class="line">    <span class="comment"># 随机生成一个UUID</span></div><div class="line">    <span class="comment">#uuid = uuid.uuid4()</span></div><div class="line">    uuid = datetime.datetime.now().strftime(<span class="string">'%Y%m%d%H%M%S'</span>)</div><div class="line">    <span class="comment">#print(uuid)</span></div><div class="line">    <span class="built_in">return</span> uuid + ext</div><div class="line">    </div><div class="line"><span class="comment"># 随机抓取妹子图</span></div><div class="line">def get_meiztu():</div><div class="line">    url = get_images_url()</div><div class="line">    <span class="built_in">print</span>(url)</div><div class="line">    <span class="keyword">if</span> url:</div><div class="line">        data = get_image(url)</div><div class="line">        <span class="keyword">if</span> data:</div><div class="line">            filename = get_file_name(url)</div><div class="line">            save_file(GANK_PATH, filename, data)</div><div class="line">            <span class="built_in">return</span> GANK_PATH + filename</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            <span class="built_in">return</span> False</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="built_in">return</span> False</div><div class="line"></div><div class="line"><span class="comment"># 返回图灵接口聊天内容</span></div><div class="line">def talk_robot(info=<span class="string">'你好啊'</span>):   <span class="comment">#定义一个默认参数</span></div><div class="line">    api_url = <span class="string">'http://www.tuling123.com/openapi/api'</span>  <span class="comment"># 图灵接口url </span></div><div class="line">    data = &#123;<span class="string">'key'</span>: TULING_KEY, <span class="string">'info'</span>: info&#125; <span class="comment"># 注册图灵生成key</span></div><div class="line">    r = requests.post(api_url, data=data).text</div><div class="line">    response = json.loads(r)[<span class="string">'text'</span>]</div><div class="line">    <span class="built_in">return</span> response</div><div class="line"></div><div class="line"><span class="comment"># 定义一个话痨微信机器人</span></div><div class="line"><span class="comment">#@bot.register()</span></div><div class="line">def reply_my_friend(msg):</div><div class="line">    message = <span class="string">'&#123;&#125;'</span>.format(msg.text)</div><div class="line">    response = talk_robot(info=message)</div><div class="line">    <span class="built_in">return</span> response</div><div class="line"></div><div class="line"><span class="comment"># 定义一个当被@才回复的微信机器人</span></div><div class="line"><span class="comment">#@bot.register()</span></div><div class="line">def print_group_msg(msg):</div><div class="line">    <span class="keyword">if</span> msg.is_at:</div><div class="line">        message = <span class="string">'&#123;&#125;'</span>.format(msg.text)</div><div class="line">        response = talk_robot(info=message)</div><div class="line">        <span class="built_in">return</span> response</div><div class="line">    </div><div class="line"><span class="comment"># 回复信息</span></div><div class="line"><span class="comment">#@bot.register()</span></div><div class="line">def reply_msg(msg):</div><div class="line">    msg.reply(u<span class="string">'噶蛤玩意？'</span>)</div><div class="line"></div><div class="line"><span class="comment"># 获取所有类型的消息（好友消息、群聊、公众号，不包括任何自己发送的消息）</span></div><div class="line"><span class="comment"># 并将获得的消息打印到控制台</span></div><div class="line"><span class="comment">#@bot.register()</span></div><div class="line">def print_others(msg):</div><div class="line">    <span class="built_in">print</span>(msg)</div><div class="line"></div><div class="line"><span class="comment">#回复 my_friend 发送的消息</span></div><div class="line"><span class="comment">#@bot.register(my_friend)</span></div><div class="line">def reply_my_friend(msg):</div><div class="line">    <span class="built_in">return</span> <span class="string">'received: &#123;&#125; (&#123;&#125;)'</span>.format(msg.text, msg.type)</div><div class="line"> </div><div class="line"><span class="comment"># 回复发送给自己的消息，可以使用这个方法来进行测试机器人而不影响到他人</span></div><div class="line"><span class="comment">#@bot.register(bot.self, except_self=False)</span></div><div class="line">def reply_self(msg):</div><div class="line">    <span class="built_in">return</span> <span class="string">'received: &#123;&#125; (&#123;&#125;)'</span>.format(msg.text, msg.type)</div><div class="line"> </div><div class="line"><span class="comment"># 打印出所有群聊中@自己的文本消息，并自动回复相同内容</span></div><div class="line"><span class="comment"># 这条注册消息是我们构建群聊机器人的基础</span></div><div class="line"><span class="comment">#@bot.register(Group, TEXT)</span></div><div class="line">def print_group_msg(msg):</div><div class="line">    <span class="keyword">if</span> msg.is_at:</div><div class="line">        <span class="built_in">print</span>(msg)</div><div class="line">        msg.reply(msg.text)</div><div class="line">    </div><div class="line"><span class="comment"># 取得每日天气</span></div><div class="line">def get_weather():</div><div class="line">    apiUrl = <span class="string">'http://www.tuling123.com/openapi/api'</span></div><div class="line">    data = &#123;</div><div class="line">        <span class="string">'key'</span>: TULING_KEY,</div><div class="line">        <span class="string">'info'</span>: <span class="string">'北京今天天气'</span>, <span class="comment">#这里换成你自己所在城市</span></div><div class="line">    &#125;</div><div class="line">    try:</div><div class="line">        r = requests.post(apiUrl, data=data).json()</div><div class="line">        weather=r.get(<span class="string">'text'</span>).split(<span class="string">':'</span>)[1]</div><div class="line">        <span class="built_in">return</span> <span class="string">"北京今日天气："</span>+weather+<span class="string">"\n"</span></div><div class="line">    except:</div><div class="line">        <span class="built_in">return</span> <span class="string">"查询天气信息失败\n"</span></div><div class="line"></div><div class="line"><span class="comment"># 取得每日空气质量</span></div><div class="line">def get_airQuality():</div><div class="line">    data = &#123;&#125;</div><div class="line">    data[<span class="string">"appkey"</span>] = JISU_KEY</div><div class="line">    <span class="comment">#data["city"] = '北京'</span></div><div class="line">    data[<span class="string">"cityid"</span>] = <span class="string">'1'</span></div><div class="line">    url_values = urlencode(data)</div><div class="line">    url = <span class="string">"http://api.jisuapi.com/aqi/query"</span> + <span class="string">"?"</span> + url_values</div><div class="line">    try:</div><div class="line">        r = requests.get(url)</div><div class="line">        jsonarr = json.loads(r.text)</div><div class="line">        <span class="keyword">if</span> jsonarr[<span class="string">"status"</span>] != u<span class="string">"0"</span>:</div><div class="line">            <span class="built_in">print</span>(jsonarr[<span class="string">"msg"</span>])</div><div class="line">            <span class="built_in">return</span> <span class="string">"今日无空气质量信息"</span></div><div class="line">        result = jsonarr[<span class="string">"result"</span>]</div><div class="line">        content1=<span class="string">'AQI：'</span> + result[<span class="string">'aqi'</span>] + <span class="string">'，污染等级：'</span> + result[<span class="string">'quality'</span>] + <span class="string">'，PM2.5浓度：'</span> + result[<span class="string">'pm2_5'</span>]  + <span class="string">'μg/m³，PM10浓度：'</span> + result[<span class="string">'pm10'</span>] + <span class="string">'μg/m³'</span></div><div class="line">        content2=<span class="string">'空气质量：'</span> + result[<span class="string">'aqiinfo'</span>][<span class="string">'level'</span>] + <span class="string">'，'</span> + result[<span class="string">'aqiinfo'</span>][<span class="string">'affect'</span>] + <span class="string">'，'</span> + result[<span class="string">'aqiinfo'</span>][<span class="string">'measure'</span>]</div><div class="line">        content3=<span class="string">'更新时间：'</span> + result[<span class="string">'timepoint'</span>]</div><div class="line"></div><div class="line">        <span class="built_in">return</span> <span class="string">'北京今日空气质量：'</span>+content1+<span class="string">'\n'</span>+content2+<span class="string">'\n'</span>+content3+<span class="string">"\n\n"</span></div><div class="line">    except Exception:</div><div class="line">        <span class="built_in">return</span> <span class="string">"查询空气质量失败\n"</span></div><div class="line"></div><div class="line"><span class="comment"># 取得黄历信息</span></div><div class="line">def get_huangli():</div><div class="line">    data = &#123;&#125;</div><div class="line">    data[<span class="string">"appkey"</span>] = JISU_KEY_2</div><div class="line">    data[<span class="string">"year"</span>] = datetime.datetime.now().year</div><div class="line">    data[<span class="string">"month"</span>] = datetime.datetime.now().month</div><div class="line">    data[<span class="string">"day"</span>] = datetime.datetime.now().day</div><div class="line">    url_values = urlencode(data)</div><div class="line">    url = <span class="string">"http://api.jisuapi.com/huangli/date"</span> + <span class="string">"?"</span> + url_values</div><div class="line">    <span class="comment">#print(url)</span></div><div class="line">    try:</div><div class="line">        r = requests.get(url)</div><div class="line">        jsonarr = json.loads(r.text)</div><div class="line">        <span class="keyword">if</span> jsonarr[<span class="string">"status"</span>] != u<span class="string">"0"</span>:</div><div class="line">            <span class="built_in">print</span>(jsonarr[<span class="string">"msg"</span>])</div><div class="line">            <span class="built_in">return</span> <span class="string">"今日无黄历信息\n"</span></div><div class="line">        result = jsonarr[<span class="string">"result"</span>]</div><div class="line">        content1=<span class="string">'天干地支:'</span> + <span class="string">','</span>.join(result[<span class="string">'suici'</span>])</div><div class="line">        content2=<span class="string">'今日应当注意的生肖:'</span> + result[<span class="string">"chong"</span>]</div><div class="line">        content3=<span class="string">'宜：'</span> + <span class="string">','</span>.join(result[<span class="string">'yi'</span>])</div><div class="line">        content4=<span class="string">'忌：'</span> + <span class="string">','</span>.join(result[<span class="string">'ji'</span>])</div><div class="line"></div><div class="line">        <span class="built_in">return</span> <span class="string">'今日黄历：'</span>+content1+<span class="string">'\n'</span>+content2+<span class="string">'\n'</span>+content3+<span class="string">'\n'</span>+content4+<span class="string">"\n\n"</span></div><div class="line">    except Exception:</div><div class="line">        <span class="built_in">return</span> <span class="string">"查询黄历信息失败\n"</span></div><div class="line"></div><div class="line"><span class="comment"># 取得每日一句</span></div><div class="line">def get_everydayWords():</div><div class="line">    url = <span class="string">'http://open.iciba.com/dsapi/'</span></div><div class="line">    r =requests.get(url)</div><div class="line">    content = json.loads(r.text)</div><div class="line">    <span class="built_in">return</span> <span class="string">'每日一句：\n'</span>+content[<span class="string">'content'</span>] +<span class="string">'\n'</span>+content[<span class="string">'note'</span>]+<span class="string">"\n\n"</span></div><div class="line"></div><div class="line">def deal(str):</div><div class="line">    str = str.replace(<span class="string">'&lt;p align="center"&gt;'</span>, <span class="string">''</span>)</div><div class="line">    str = str.replace(<span class="string">'&lt;p&gt;'</span>, <span class="string">''</span>)</div><div class="line">    str = str.replace(<span class="string">'&lt;/p&gt;'</span>, <span class="string">''</span>)</div><div class="line">    str = str.replace(<span class="string">'&amp;nbsp;'</span>, <span class="string">''</span>)</div><div class="line">    str = str.replace(<span class="string">'&lt;br /&gt;'</span>, <span class="string">''</span>)</div><div class="line">    </div><div class="line">    <span class="built_in">return</span> str</div><div class="line"></div><div class="line"><span class="comment"># 计算两个日期相差天数</span></div><div class="line">def caltime(date1,date2):</div><div class="line">    <span class="comment">#%Y-%m-%d为日期格式，其中的-可以用其他代替或者不写，但是要统一，同理后面的时分秒也一样；可以只计算日期，不计算时间。</span></div><div class="line">    <span class="comment">#date1=time.strptime(date1,"%Y-%m-%d %H:%M:%S") </span></div><div class="line">    <span class="comment">#date2=time.strptime(date2,"%Y-%m-%d %H:%M:%S")</span></div><div class="line">    date1=time.strptime(date1,<span class="string">"%Y-%m-%d"</span>)</div><div class="line">    date2=time.strptime(date2,<span class="string">"%Y-%m-%d"</span>)</div><div class="line">    <span class="comment">#根据上面需要计算日期还是日期时间，来确定需要几个数组段。下标0表示年，小标1表示月，依次类推...</span></div><div class="line">    <span class="comment">#date1=datetime.datetime(date1[0],date1[1],date1[2],date1[3],date1[4],date1[5])</span></div><div class="line">    <span class="comment">#date2=datetime.datetime(date2[0],date2[1],date2[2],date2[3],date2[4],date2[5])</span></div><div class="line">    date1=datetime.datetime(date1[0],date1[1],date1[2])</div><div class="line">    date2=datetime.datetime(date2[0],date2[1],date2[2])</div><div class="line">    <span class="comment">#返回两个变量相差的值，就是相差天数</span></div><div class="line">    <span class="comment">#print((date2-date1).days)#将天数转成int型</span></div><div class="line">    <span class="built_in">return</span> (date2-date1).days</div><div class="line"></div><div class="line"><span class="comment"># 判断日期是否为合法输入，年月日的格式需要与上面对应，正确返回True，错误返回False，注意大小写。</span></div><div class="line">def is_date(str):</div><div class="line">    try:</div><div class="line">        time.strptime(str,<span class="string">"%Y-%m-%d"</span>)</div><div class="line">        <span class="built_in">return</span> True</div><div class="line">    except:</div><div class="line">        <span class="built_in">return</span> False</div><div class="line"></div><div class="line"><span class="comment"># 随机取得唐诗300首中一首</span></div><div class="line">def get_tangshi(flag):</div><div class="line">    data = &#123;&#125;</div><div class="line">    data[<span class="string">"appkey"</span>] = JISU_KEY</div><div class="line">    <span class="comment"># 随机取一首</span></div><div class="line">    <span class="keyword">if</span> flag==0:</div><div class="line">        ran_int = random.randint(1,300)</div><div class="line">        data[<span class="string">"detailid"</span>] = ran_int</div><div class="line">    <span class="keyword">else</span>: <span class="comment">#根据日期生成id</span></div><div class="line">        d1 = START_DATE</div><div class="line">        d2 = time.strftime(<span class="string">'%Y-%m-%d'</span>,time.localtime(time.time()))</div><div class="line">        d = caltime(d1,d2)</div><div class="line">        <span class="comment">#print(d)</span></div><div class="line">        data[<span class="string">"detailid"</span>] = d</div><div class="line"></div><div class="line">    url_values = urlencode(data)</div><div class="line">    url = <span class="string">"http://api.jisuapi.com/tangshi/detail"</span> + <span class="string">"?"</span> + url_values</div><div class="line">    <span class="comment">#print(url)</span></div><div class="line">    try:</div><div class="line">        r = requests.get(url)</div><div class="line">        jsonarr = json.loads(r.text)</div><div class="line">        <span class="keyword">if</span> jsonarr[<span class="string">"status"</span>] != u<span class="string">"0"</span>:</div><div class="line">            <span class="built_in">print</span>(jsonarr[<span class="string">"msg"</span>])</div><div class="line">            <span class="built_in">return</span> <span class="string">"ID为空获取失败"</span></div><div class="line">        result = jsonarr[<span class="string">"result"</span>]</div><div class="line">        <span class="comment">#content1= result['title'] + '\n' + result['type'] + '\n' + result['author']</span></div><div class="line">        content1= result[<span class="string">'title'</span>] + <span class="string">'\n'</span> + result[<span class="string">'author'</span>]</div><div class="line">        content2= deal(result[<span class="string">'content'</span>])</div><div class="line">        content3= <span class="string">'注释：'</span> + deal(result[<span class="string">'explanation'</span>])</div><div class="line">        content4= <span class="string">'解析：'</span> + deal(result[<span class="string">'appreciation'</span>])</div><div class="line">        <span class="keyword">if</span> flag==0:</div><div class="line">            <span class="built_in">return</span> <span class="string">'唐诗赏析：\n'</span>+content1+<span class="string">'\n'</span>+content2+<span class="string">'\n'</span>+content3+<span class="string">"\n"</span>+content4+<span class="string">"\n\n"</span></div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            <span class="built_in">return</span> <span class="string">'唐诗赏析：\n'</span>+content1+<span class="string">'\n'</span>+content2+<span class="string">"\n\n"</span></div><div class="line">    except Exception:</div><div class="line">        <span class="built_in">return</span> <span class="string">"查询唐诗信息失败\n"</span></div><div class="line"> </div><div class="line">def get_context():</div><div class="line">    try:</div><div class="line">        <span class="built_in">return</span> <span class="string">"美好的一天从我的问候开始:早上好!\n"</span>+get_weather()+get_airQuality()+get_huangli()+get_everydayWords()+get_tangshi(1)+<span class="string">"发送信息时间："</span>+datetime.datetime.now().strftime(<span class="string">'%Y-%m-%d %H:%M:%S'</span>)</div><div class="line">    except:</div><div class="line">        <span class="built_in">print</span>(<span class="string">'抓取推送信息失败.'</span>)</div><div class="line">        <span class="built_in">return</span> <span class="string">""</span></div><div class="line"></div><div class="line"><span class="comment"># 发送信息给朋友</span></div><div class="line">def SentFriendsMsg(name, context):</div><div class="line">    <span class="keyword">if</span> context == <span class="string">''</span>:</div><div class="line">        <span class="built_in">return</span></div><div class="line">    try:</div><div class="line">        my_friend = bot.friends().search(name)[0]</div><div class="line">        my_friend.send(context)</div><div class="line">    except:</div><div class="line">        my_friend = bot.friends().search(u<span class="string">'木鱼'</span>)[0]  <span class="comment"># 发送不成功，则发送消息给自己，提醒消息发送失败</span></div><div class="line">        my_friend.send(<span class="string">'sended msg to '</span> + name +<span class="string">"\n"</span> + u<span class="string">'消息发送失败'</span>+<span class="string">"\n"</span>)</div><div class="line"></div><div class="line"><span class="comment"># 群里发信息</span></div><div class="line">def SentChatRoomsMsg(name, context):</div><div class="line">    <span class="keyword">if</span> context == <span class="string">''</span>:</div><div class="line">        <span class="built_in">return</span></div><div class="line">    try:</div><div class="line">        my_group = bot.groups().search(name)[0]</div><div class="line">        my_group.send(context)</div><div class="line">    except:</div><div class="line">        my_friend = bot.friends().search(u<span class="string">'木鱼'</span>)[0]  <span class="comment"># 发送不成功，则发送消息给自己，提醒消息发送失败</span></div><div class="line">        my_friend.send(<span class="string">'sended msg to '</span> + name +<span class="string">"\n"</span> + u<span class="string">'消息发送失败'</span>+<span class="string">"\n"</span>)</div><div class="line"> </div><div class="line">def daily():</div><div class="line">    content = get_context()</div><div class="line">    <span class="keyword">for</span> friend_name <span class="keyword">in</span> FRIEND_LIST:</div><div class="line">        SentFriendsMsg(friend_name, content)</div><div class="line">        <span class="built_in">print</span>(<span class="string">'sended msg to '</span> + friend_name +<span class="string">"\n"</span>+ <span class="string">" content: "</span> + content+<span class="string">"\n"</span>)</div><div class="line">    <span class="keyword">for</span> group_name <span class="keyword">in</span> DAILY_GROUP_LIST:</div><div class="line">        SentChatRoomsMsg(group_name, content)</div><div class="line">        <span class="built_in">print</span>(<span class="string">'sended msg to '</span> + group_name +<span class="string">"\n"</span>+ <span class="string">" content: "</span> + content+<span class="string">"\n"</span>)</div><div class="line"></div><div class="line">def get_msg():</div><div class="line">    url = <span class="string">'http://open.iciba.com/dsapi/'</span>   <span class="comment"># 金山词霸每日一句 api 链接</span></div><div class="line">    html = requests.get(url)</div><div class="line">    content = html.json()[<span class="string">'content'</span>]  <span class="comment"># 获取每日一句英文语句</span></div><div class="line">    note = html.json()[<span class="string">'note'</span>]        <span class="comment"># 获取每日一句英文的翻译语句</span></div><div class="line">    <span class="built_in">return</span> content, note</div><div class="line"></div><div class="line"><span class="comment"># 发送消息</span></div><div class="line">def send_msg():</div><div class="line">    try:</div><div class="line">        msgs = get_msg()</div><div class="line">        content = msgs[0]</div><div class="line">        note = msgs[1]</div><div class="line">        my_friend = bot.friends().search(u<span class="string">'林精灵2'</span>)[0]  <span class="comment"># 此处是对方自己的昵称，不是微信号，也不是你的备注。</span></div><div class="line">        my_friend.send(content)  <span class="comment"># 发送英文语句</span></div><div class="line">        my_friend.send(note)     <span class="comment"># 发送英文翻译</span></div><div class="line">        my_friend.send(u<span class="string">'来自 木鱼 的问候'</span>)  <span class="comment"># 自定义语句，根据自己情况更改</span></div><div class="line">	<span class="comment"># 每86400秒（1天），发送1次</span></div><div class="line">        <span class="comment">#t = Timer(86400, send_msg)  # Timer（定时器）是 Thread 的派生类，用于在指定时间后调用一个方法。（1天=86400s)</span></div><div class="line">	<span class="comment"># 为了防止时间太固定，于是决定对其加上随机数</span></div><div class="line">        ran_int = random.randint(0,100)</div><div class="line">        t = Timer(86400+ran_int,send_news)</div><div class="line">        t.start()</div><div class="line">    except BaseException:</div><div class="line">        my_friend = bot.friends().search(u<span class="string">'木鱼'</span>)[0]  <span class="comment"># 发送不成功，则发送消息给自己，提醒消息发送失败</span></div><div class="line">        my_friend.send(u<span class="string">'消息发送失败'</span>)</div><div class="line"></div><div class="line"><span class="comment">#test()</span></div><div class="line"><span class="comment">#content = get_context()</span></div><div class="line"><span class="comment">#SentFriendsMsg('多多', content)</span></div><div class="line"></div><div class="line"><span class="comment">#schedule.every().day.at("7:30").do(daily)</span></div><div class="line"><span class="comment">#while True:</span></div><div class="line"><span class="comment">#    schedule.run_pending()#确保schedule一直运行</span></div><div class="line"><span class="comment">#    time.sleep(1)</span></div><div class="line"></div><div class="line"><span class="comment">#进入 Python 命令行、让程序保持运行</span></div><div class="line"><span class="comment"># 推荐使用</span></div><div class="line">embed()</div><div class="line"></div><div class="line"><span class="comment"># 或者仅仅堵塞线程</span></div><div class="line"><span class="comment"># bot.join()</span></div><div class="line"></div><div class="line"><span class="comment">#if __name__ == '__main__':</span></div><div class="line">    <span class="comment">#daily()</span></div><div class="line">    <span class="comment">#send_msg()</span></div><div class="line">    <span class="comment">#wxpy_test()</span></div></pre></td></tr></table></figure>
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -190,16 +212,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/09/17/wechatrobot/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2018/09/17/wechatrobot/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2018/06/10/xsdowns-db/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">download kenshu.cc and save mysql database</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -219,632 +300,14 @@
 
 
 
-
-  
-    <article id="post-xsdowns-db" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/10/xsdowns-db/">download kenshu.cc and save mysql database</a>
-    </h1>
-  
-
-        
-        <a href="/2018/06/10/xsdowns-db/" class="archive-article-date">
-  	<time datetime="2018-06-10T04:40:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用python 下载 m.kenshu.cc 所有小说 并 按章节内容 保存到 MySQL 数据库里。</p>
-<p>使用方法：</p>
-<p>xsdown.py <a href="https://m.kenshu.cc/modules/article/search.php" target="_blank" rel="external">https://m.kenshu.cc/modules/article/search.php</a></p>
-<p>mysql数据库表结构：</p>
-<p>CREATE TABLE <code>novel</code> (<br>    <code>id</code> VARCHAR(20) NOT NULL,<br>    <code>title</code> VARCHAR(50) NOT NULL,<br>    <code>url</code> VARCHAR(200) NULL DEFAULT NULL,<br>    <code>intro</code> VARCHAR(200) NULL DEFAULT NULL,<br>    <code>author</code> VARCHAR(20) NULL DEFAULT NULL,<br>    <code>tag</code> VARCHAR(20) NULL DEFAULT NULL,<br>    <code>cover</code> VARCHAR(200) NULL DEFAULT NULL,<br>    <code>status</code> CHAR(1) NULL DEFAULT NULL COMMENT ‘0:未完成 1:已完成’,<br>    <code>dt</code> VARCHAR(20) NULL DEFAULT NULL,<br>    PRIMARY KEY (<code>id</code>)<br>)<br>COLLATE=’utf8_general_ci’<br>ENGINE=InnoDB<br>;</p>
-<p>CREATE TABLE <code>section</code> (<br>    <code>id</code> VARCHAR(20) NOT NULL,<br>    <code>section_id</code> VARCHAR(20) NOT NULL,<br>    <code>section_title</code> VARCHAR(50) NOT NULL,<br>    <code>section_url</code> VARCHAR(200) NULL DEFAULT NULL,<br>    <code>section_content</code> TEXT NULL,<br>    <code>dt</code> VARCHAR(20) NULL DEFAULT NULL,<br>    PRIMARY KEY (<code>id</code>, <code>section_id</code>)<br>)<br>COMMENT=’小说章节内容’<br>COLLATE=’utf8_general_ci’<br>ENGINE=InnoDB<br>;</p>
-<p>附python源码</p>
-        
-          <a class="article-more-a" href="/2018/06/10/xsdowns-db/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/06/10/xsdowns-db/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-sina-blog - v2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/26/sina-blog - v2/">Sina Blog &amp;&amp; Comment Spilder 第二版</a>
-    </h1>
-  
-
-        
-        <a href="/2018/02/26/sina-blog - v2/" class="archive-article-date">
-  	<time datetime="2018-02-26T03:40:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用python 下载Sina Blog指定用户的博客文章及评论信息。</p>
-<p>使用方法：</p>
-<p>SBB.py <a href="http://blog.sina.com.cn/realtcm" target="_blank" rel="external">http://blog.sina.com.cn/realtcm</a> desc 0 0</p>
-<p>参数一：sina用户博客地址<br>参数二：desc：降序 默认空，为升序<br>参数三：0：不输出评论 默认空，输出评论<br>参数四：0：不下载文章图片 默认空，下载图片</p>
-<p>评论默认取的是文章前200条回复。</p>
-<p>2018/02/26:</p>
-<p>新增下载页面图片功能。</p>
-<p>附python源码</p>
-        
-          <a class="article-more-a" href="/2018/02/26/sina-blog - v2/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/02/26/sina-blog - v2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-sina-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/26/sina-blog/">Sina Blog &amp;&amp; Comment Spilder</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/26/sina-blog/" class="archive-article-date">
-  	<time datetime="2018-01-26T03:40:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用python 下载Sina Blog指定用户的博客文章及评论信息。</p>
-<p>使用方法：</p>
-<p>SBB.py <a href="http://blog.sina.com.cn/realtcm" target="_blank" rel="external">http://blog.sina.com.cn/realtcm</a> desc 0</p>
-<p>参数一：sina用户博客地址<br>参数二：desc：降序 默认升序<br>参数三：0：不输出评论 默认输出评论</p>
-<p>评论默认取的是文章前200条回复。</p>
-<p>附python源码</p>
-        
-          <a class="article-more-a" href="/2018/01/26/sina-blog/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/26/sina-blog/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-csdn-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/18/csdn-blog/">Csdn Blog Spilder</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/18/csdn-blog/" class="archive-article-date">
-  	<time datetime="2018-01-18T04:40:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用python 下载CSDN Blog指定用户的博客文章。</p>
-<p>使用方法：</p>
-<p>CBB.py <a href="http://blog.csdn.net/lmj623565791/" target="_blank" rel="external">http://blog.csdn.net/lmj623565791/</a></p>
-<p>附python源码</p>
-        
-          <a class="article-more-a" href="/2018/01/18/csdn-blog/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/18/csdn-blog/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-sina-news-app" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/07/sina-news-app/">Use Python Spilder Sina Finance App News</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/07/sina-news-app/" class="archive-article-date">
-  	<time datetime="2018-01-07T08:57:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用python 下载Sina财经app财经、股票频道的新闻列表，并保存到mssql数据中。</p>
-<p>附python源码</p>
-        
-          <a class="article-more-a" href="/2018/01/07/sina-news-app/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/07/sina-news-app/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-tongcheng-user" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/31/tongcheng-user/">Use Python Download Tongcheng User Info</a>
-    </h1>
-  
-
-        
-        <a href="/2017/12/31/tongcheng-user/" class="archive-article-date">
-  	<time datetime="2017-12-31T04:24:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用python 下载一个手机同城交友软件上所有女性资料，并保存到mysql数据中。</p>
-<p>用户信息：</p>
-<p>所有省份，身高155~180cm, 年龄20-40岁之间</p>
-<p>附python源码</p>
-        
-          <a class="article-more-a" href="/2017/12/31/tongcheng-user/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/31/tongcheng-user/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-download-xiaoshuo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/27/download-xiaoshuo/">Use Python Download Xiao Shuo</a>
-    </h1>
-  
-
-        
-        <a href="/2017/12/27/download-xiaoshuo/" class="archive-article-date">
-  	<time datetime="2017-12-27T08:12:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用python 下载 <a href="http://www.kenshu.cc/" target="_blank" rel="external">啃书小说网</a> 指定小说的所有文章到一个txt文件。</p>
-<p>使用方法：</p>
-<p>输入小说目录首页地址，如：</p>
-<p>师娘，别玩火（作者：推窗望岳）的目录首页为：</p>
-<p><a href="http://www.kenshu.cc/xiaoshuo/31109/0/" target="_blank" rel="external">http://www.kenshu.cc/xiaoshuo/31109/0/</a></p>
-<p>附python源码</p>
-        
-          <a class="article-more-a" href="/2017/12/27/download-xiaoshuo/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/27/download-xiaoshuo/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-stormzhang-yunying" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/11/stormzhang-yunying/">从我公号发展史来谈谈产品、运营 - stormzhang</a>
-    </h1>
-  
-
-        
-        <a href="/2017/12/11/stormzhang-yunying/" class="archive-article-date">
-  	<time datetime="2017-12-11T03:10:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>从我公号发展史来谈谈产品、运营</p>
-<p>这里很多都是做技术的，对产品、运营知之甚少，有的甚至不知道产品是干嘛的，那么今天，我就以我公众号为例，来给大家普及下产品相关的知识，以及看似我在按部就班的写文章，其实这其中我把我的产品思维充分的发挥了出来。</p>
-<p>如果说把我的公众号看做一款产品的话，那么最初从博客关注我的一批用户就是所谓「种子用户」，「种子用户」的作用是帮助产品从 0 过度到 1，对于公众号来说，读者过万就是所谓的 1，所以怎么从几百个「种子用户」增长到 1w 是关键。</p>
-<p>我最早在知乎回答了一个问题很火，叫「如何自学 Android」，直到现在这个回答都是 Android 话题下最火的回答，只不过当初回答的时候不知道，但是当我开始做公众号的时候，我在这个回答下放了我的二维码，这就叫「引流」，很多读者都是看了当初的那个回答来关注过来的。</p>
-<p>靠着知乎上的「引流」和种子用户的自发支持与口碑传播，我读者很快就 1w 关注了，从产品的角度，也就是所谓的完成了从 0 到 1 的过程。</p>
-        
-          <a class="article-more-a" href="/2017/12/11/stormzhang-yunying/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/11/stormzhang-yunying/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-stormzhang-chuangye" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/11/stormzhang-chuangye/">我的一次创业投资史 - stormzhang</a>
-    </h1>
-  
-
-        
-        <a href="/2017/12/11/stormzhang-chuangye/" class="archive-article-date">
-  	<time datetime="2017-12-11T02:50:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>我的一次创业投资史</p>
-<p>上次做了调查，没想到大家对我投资的吐司店这么感兴趣，那么今天就来给大家分享下。</p>
-        
-          <a class="article-more-a" href="/2017/12/11/stormzhang-chuangye/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/11/stormzhang-chuangye/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
+  
+
+  
+
+  
+
   
 
 
@@ -867,8 +330,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
