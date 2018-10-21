@@ -151,6 +151,152 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-yijianzhongyi" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/21/yijianzhongyi/">微信小程序 桐柏宫道医会 音频下载</a>
+    </h1>
+  
+
+        
+        <a href="/2018/10/21/yijianzhongyi/" class="archive-article-date">
+  	<time datetime="2018-10-21T04:40:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用python下载微信小程序 桐柏宫道医会 历届音频。</p>
+<p>用抓包软件charles提取小程序数据请求包：</p>
+<p>第6届道医会url:<br><a href="https://appapi.yijianzy.com/api/v1/ablum/e59d2088ef2c499fbc81/item?page=0&amp;order=asc&amp;pageSize=0" target="_blank" rel="external">https://appapi.yijianzy.com/api/v1/ablum/e59d2088ef2c499fbc81/item?page=0&amp;order=asc&amp;pageSize=0</a></p>
+<p>第5届道医会url:<br><a href="https://appapi.yijianzy.com/api/v1/ablum/0cad7a5764634cbdb85d/item?page=0&amp;order=asc&amp;pageSize=0" target="_blank" rel="external">https://appapi.yijianzy.com/api/v1/ablum/0cad7a5764634cbdb85d/item?page=0&amp;order=asc&amp;pageSize=0</a></p>
+<p>第4届道医会url:<br><a href="https://appapi.yijianzy.com/api/v1/ablum/b61aa795aaf948ffa3fe/item?page=0&amp;order=asc&amp;pageSize=0" target="_blank" rel="external">https://appapi.yijianzy.com/api/v1/ablum/b61aa795aaf948ffa3fe/item?page=0&amp;order=asc&amp;pageSize=0</a></p>
+<p>返回数据包：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	&quot;status&quot;: 200,</div><div class="line">	&quot;info&quot;: &quot;成功&quot;,</div><div class="line">	&quot;data&quot;: &#123;</div><div class="line">		&quot;items&quot;: [&#123;</div><div class="line">			&quot;path&quot;: &quot;o_1cm4dbjg8t192h61ub31ecs4na1v.mp3&quot;,</div><div class="line">			&quot;name&quot;: &quot;1 程玮-致开幕词&quot;,</div><div class="line">			&quot;albumId&quot;: &quot;e59d2088ef2c499fbc81&quot;,</div><div class="line">			&quot;ctime&quot;: 1535599241000,</div><div class="line">			&quot;id&quot;: 9627,</div><div class="line">			&quot;sort&quot;: 1</div><div class="line">		&#125;, &#123;</div><div class="line">			&quot;path&quot;: &quot;o_1cm4dbjg8mb1csq1k105vg122320.mp3&quot;,</div><div class="line">			&quot;name&quot;: &quot;2 谢洵-道医的发展思考&quot;,</div><div class="line">			&quot;albumId&quot;: &quot;e59d2088ef2c499fbc81&quot;,</div><div class="line">			&quot;ctime&quot;: 1535599241000,</div><div class="line">			&quot;id&quot;: 9628,</div><div class="line">			&quot;sort&quot;: 2</div><div class="line">		&#125;,</div><div class="line">		...</div><div class="line">		...</div><div class="line">		&#125;, &#123;</div><div class="line">			&quot;path&quot;: &quot;o_1cm4dbjg9gi614hjvqn1f4936u3c.mp3&quot;,</div><div class="line">			&quot;name&quot;: &quot;46 刘文忠-易骨养生道&quot;,</div><div class="line">			&quot;albumId&quot;: &quot;e59d2088ef2c499fbc81&quot;,</div><div class="line">			&quot;ctime&quot;: 1535599241000,</div><div class="line">			&quot;id&quot;: 9672,</div><div class="line">			&quot;sort&quot;: 46</div><div class="line">		&#125;, &#123;</div><div class="line">			&quot;path&quot;: &quot;o_1cm4dbjg91e33dca12ch1b90uao3d.mp3&quot;,</div><div class="line">			&quot;name&quot;: &quot;47 叶劲峰-挑风、灸&quot;,</div><div class="line">			&quot;albumId&quot;: &quot;e59d2088ef2c499fbc81&quot;,</div><div class="line">			&quot;ctime&quot;: 1535599241000,</div><div class="line">			&quot;id&quot;: 9673,</div><div class="line">			&quot;sort&quot;: 47</div><div class="line">		&#125;]</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>提取id和name字段，后面用</p>
+<p>根据id获取MP3下载url地址：<br><a href="https://appapi.yijianzy.com/api/v1/ablum/item/9627/address" target="_blank" rel="external">https://appapi.yijianzy.com/api/v1/ablum/item/9627/address</a></p>
+<p>返回结果：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	&quot;status&quot;: 200,</div><div class="line">	&quot;info&quot;: &quot;成功&quot;,</div><div class="line">	&quot;data&quot;: &quot;http://media.yijianzy.com/o_1cm4dbjg8t192h61ub31ecs4na1v.mp3?e=1540188589&amp;token=zwtSGoigG_n8MpUyiaDPUOoDyAICVuETgz2TRuL_:9jkWk063eRcIIBfRV3R63aV63Hc=&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>data字段即为音频文件的url下载地址，直接下载即可。</p>
+<p>附python源码</p>
+        
+          <a class="article-more-a" href="/2018/10/21/yijianzhongyi/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/21/yijianzhongyi/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-wechatrobot2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/21/wechatrobot2/">wechat robot using wxpy python library 第二版</a>
+    </h1>
+  
+
+        
+        <a href="/2018/09/21/wechatrobot2/" class="archive-article-date">
+  	<time datetime="2018-09-21T04:40:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用python wxpy库 实现 微信自动聊天机器人。</p>
+<p>使用方法：</p>
+<p>使用前先安装 wxpy 库，</p>
+<p>pip3 install wxpy<br>pip3 install pillow<br>pip3 install python-docx<br>pip3 install –upgrade speechrecognition<br>pip3 install pydub</p>
+<p>增加：1、学习群讲师聊天记录导出dox和txt<br>      2、学习群讲师语音讲课合并导出为mp3文件</p>
+<p>扫码登录</p>
+<p>附python源码</p>
+        
+          <a class="article-more-a" href="/2018/09/21/wechatrobot2/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/09/21/wechatrobot2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-wechatrobot" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -677,141 +823,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/12/27/download-xiaoshuo/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-stormzhang-yunying" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/11/stormzhang-yunying/">从我公号发展史来谈谈产品、运营 - stormzhang</a>
-    </h1>
-  
-
-        
-        <a href="/2017/12/11/stormzhang-yunying/" class="archive-article-date">
-  	<time datetime="2017-12-11T03:10:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>从我公号发展史来谈谈产品、运营</p>
-<p>这里很多都是做技术的，对产品、运营知之甚少，有的甚至不知道产品是干嘛的，那么今天，我就以我公众号为例，来给大家普及下产品相关的知识，以及看似我在按部就班的写文章，其实这其中我把我的产品思维充分的发挥了出来。</p>
-<p>如果说把我的公众号看做一款产品的话，那么最初从博客关注我的一批用户就是所谓「种子用户」，「种子用户」的作用是帮助产品从 0 过度到 1，对于公众号来说，读者过万就是所谓的 1，所以怎么从几百个「种子用户」增长到 1w 是关键。</p>
-<p>我最早在知乎回答了一个问题很火，叫「如何自学 Android」，直到现在这个回答都是 Android 话题下最火的回答，只不过当初回答的时候不知道，但是当我开始做公众号的时候，我在这个回答下放了我的二维码，这就叫「引流」，很多读者都是看了当初的那个回答来关注过来的。</p>
-<p>靠着知乎上的「引流」和种子用户的自发支持与口碑传播，我读者很快就 1w 关注了，从产品的角度，也就是所谓的完成了从 0 到 1 的过程。</p>
-        
-          <a class="article-more-a" href="/2017/12/11/stormzhang-yunying/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/11/stormzhang-yunying/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-stormzhang-chuangye" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/11/stormzhang-chuangye/">我的一次创业投资史 - stormzhang</a>
-    </h1>
-  
-
-        
-        <a href="/2017/12/11/stormzhang-chuangye/" class="archive-article-date">
-  	<time datetime="2017-12-11T02:50:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>我的一次创业投资史</p>
-<p>上次做了调查，没想到大家对我投资的吐司店这么感兴趣，那么今天就来给大家分享下。</p>
-        
-          <a class="article-more-a" href="/2017/12/11/stormzhang-chuangye/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/11/stormzhang-chuangye/">展开全文 >></a>
         </p>
       
 
